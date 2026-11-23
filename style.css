@@ -42,3 +42,13 @@ footer{display:flex;justify-content:space-between;border-top:1px solid var(--lin
 footer{gap:12px;font-size:7px;letter-spacing:.7px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+/* Minimal image-led homepage */
+.site-shell{width:min(100% - 36px,1120px);min-height:100svh;padding:28px 0;display:flex;flex-direction:column}
+.hero{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;padding:12px 0 34px}
+.hero-image{width:min(100%,760px);height:min(64svh,680px);min-height:300px;overflow:hidden;background:#111720}
+.hero-image img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;filter:grayscale(100%)}
+.hero-content{display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
+.hero-content h1{margin:0;font:650 clamp(28px,5vw,42px)/1.15 "Manrope",sans-serif;letter-spacing:-1.5px;color:var(--text)}
+.hero-content .btn{justify-content:center;min-width:190px;gap:22px}
+@media(max-width:700px){.site-shell{width:calc(100% - 28px);padding:18px 0}.hero{gap:22px;padding:8px 0 26px}.hero-image{height:58svh;min-height:280px;max-height:560px}.hero-content h1{font-size:30px}}
