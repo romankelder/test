@@ -326,69 +326,69 @@ const QUESTIONS = [
     "hint": "Do not wait for the fire front."
   },
   {
-    "category": "Looks IQ",
+    "category": "Financial IQ",
     "level": 1,
-    "q": "What makes visual comparison between two portraits most reliable?",
+    "q": "What is the main purpose of an emergency fund?",
     "options": [
-      "Compare portraits taken under different lighting",
-      "Use the same light, angle, distance and lens",
-      "Choose images with different facial expressions",
-      "Apply the same beauty filter to both portraits"
+      "To invest in volatile assets",
+      "To cover unexpected essential expenses",
+      "To increase a credit limit",
+      "To pay for planned luxuries"
     ],
     "answer": 1,
-    "hint": "Control photographic variables."
+    "hint": "It provides accessible cash for unexpected costs or income disruption."
   },
   {
-    "category": "Looks IQ",
+    "category": "Financial IQ",
     "level": 2,
-    "q": "A close portrait makes the nose look unusually large. Likely cause?",
+    "q": "You use a credit card and can afford to pay the full statement balance. What is usually the best approach?",
     "options": [
-      "A wide lens used from very close range",
-      "A long lens used from farther away",
-      "Soft lighting placed in front of the face",
-      "A plain background behind the subject"
+      "Pay only the minimum due",
+      "Skip a payment to build cash",
+      "Pay the full balance by the due date",
+      "Withdraw cash from another card"
+    ],
+    "answer": 2,
+    "hint": "Paying the statement balance on time generally avoids purchase interest."
+  },
+  {
+    "category": "Financial IQ",
+    "level": 3,
+    "q": "You invest 1,000 at 10% annual compound growth. About how much is it worth after two years, before fees and tax?",
+    "options": [
+      "1,100",
+      "1,200",
+      "1,210",
+      "1,220"
+    ],
+    "answer": 2,
+    "hint": "Year one: 1,100. Year two: 1,210."
+  },
+  {
+    "category": "Financial IQ",
+    "level": 4,
+    "q": "An investment returns 5% over a year while prices rise by 3%. What is the approximate real return?",
+    "options": [
+      "About 2% positive",
+      "About 3% negative",
+      "About 5% positive",
+      "About 8% positive"
     ],
     "answer": 0,
-    "hint": "Close wide-angle perspective exaggerates nearer features."
+    "hint": "Real return is roughly nominal return minus inflation: 5% − 3% ≈ 2%."
   },
   {
-    "category": "Looks IQ",
-    "level": 3,
-    "q": "Comparing outfits for a formal event: most useful criteria?",
-    "options": [
-      "Consider the brand before checking the fit",
-      "Assess fit, dress code, colour and context",
-      "Choose the most expensive available outfit",
-      "Prioritise trendiness over the event's formality"
-    ],
-    "answer": 1,
-    "hint": "Appearance is contextual; fit and appropriateness matter."
-  },
-  {
-    "category": "Looks IQ",
-    "level": 4,
-    "q": "A room feels unbalanced despite matching furniture. Examine?",
-    "options": [
-      "Compare the furniture's price and age",
-      "Assess visual weight, spacing and scale",
-      "Count objects on each side of the room",
-      "Check whether every item is from one range"
-    ],
-    "answer": 1,
-    "hint": "Balance depends on scale, spacing and visual weight."
-  },
-  {
-    "category": "Looks IQ",
+    "category": "Financial IQ",
     "level": 5,
-    "q": "Two photos of the same person create different impressions. Best conclusion?",
+    "q": "Why might an investor diversify across many unrelated assets?",
     "options": [
-      "One image reveals the person's real character",
-      "Pose, lighting, lens and styling affect impressions",
-      "The more flattering image is always accurate",
-      "A photograph reliably reveals personality"
+      "It guarantees a positive return each year",
+      "It removes every kind of investment risk",
+      "It reduces exposure to any single holding",
+      "It ensures the highest possible return"
     ],
-    "answer": 1,
-    "hint": "A photo cannot establish a person's worth or personality."
+    "answer": 2,
+    "hint": "Diversification can reduce asset-specific risk, but market-wide losses remain possible."
   },
   {
     "category": "Emotional IQ",
