@@ -1,10 +1,11 @@
 (function(){
 "use strict";
 var categories=["Normal IQ","Real life IQ","Math IQ","Battle IQ","Survival IQ","Looks IQ","Emotional IQ","Logic IQ","Societal IQ","Creative IQ"];
+var hero=document.querySelector(".hero");
 var screens={start:document.getElementById("screen-start"),quiz:document.getElementById("screen-quiz"),result:document.getElementById("screen-result")};
 var e={qnum:document.getElementById("qnum"),qtotal:document.getElementById("qtotal"),timer:document.getElementById("timer"),score:document.getElementById("score"),bar:document.getElementById("bar"),question:document.getElementById("question"),options:document.getElementById("options"),feedback:document.getElementById("feedback"),next:document.getElementById("btn-next"),start:document.getElementById("btn-start"),restart:document.getElementById("btn-restart"),resultScore:document.getElementById("result-score"),resultRank:document.getElementById("result-rank"),resultText:document.getElementById("result-text"),resultTime:document.getElementById("result-time"),review:document.getElementById("review"),categoryScores:document.getElementById("category-scores"),categoryLabel:document.getElementById("category-label")};
 var index=0,answers=[],startTime=0,tick=null,questions=QUESTIONS.slice();
-function show(name){Object.keys(screens).forEach(function(k){screens[k].classList.toggle("active",k===name);});window.scrollTo(0,0);}
+function show(name){hero.hidden=name!=="start";Object.keys(screens).forEach(function(k){screens[k].classList.toggle("active",k===name);});window.scrollTo(0,0);}
 function fmt(ms){var s=Math.floor(ms/1000),m=Math.floor(s/60);s%=60;return (m<10?"0":"")+m+":"+(s<10?"0":"")+s;}
 function render(){var item=questions[index];e.qnum.textContent=index+1;e.qtotal.textContent=50;e.score.textContent=answers.filter(function(a){return a.right;}).length;e.bar.style.width=(index/50*100)+"%";e.categoryLabel.textContent=item.category.toUpperCase()+" · LEVEL "+item.level;e.question.textContent=item.q;e.options.innerHTML="";e.feedback.hidden=true;e.next.hidden=true;
 item.options.forEach(function(label,i){var b=document.createElement("button");b.type="button";b.className="option";var l=document.createElement("span");l.className="letter";l.textContent=["A.","B.","C.","D."][i];b.append(l,document.createTextNode(label));b.addEventListener("click",function(){choose(i);});e.options.appendChild(b);});}
