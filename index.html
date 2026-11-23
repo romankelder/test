@@ -1,52 +1,43 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0e13">
-  <title>Roman Kelder Test — Utforska din förmåga</title>
-  <meta name="description" content="Ett test av logik, mönster, problemlösning och flera andra förmågor.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0b0e13">
+<title>Roman Kelder Test</title><meta name="description" content="A short experimental assessment across different ways of thinking.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="site-shell">
-    <nav class="topbar"><a class="wordmark" href="./" aria-label="Roman Kelder Test home"><span class="mark">R</span><span>ROMAN KELDER <i>TEST</i></span></a><span class="nav-note">A STUDY OF HOW YOU THINK</span></nav>
-    <div class="layout">
-      <section class="intro">
-        <div class="eyebrow"><span></span> INTELLIGENCE, IN MORE THAN ONE DIMENSION</div>
-        <h1>Think beyond<br><em>the obvious.</em></h1>
-        <p class="lead">A compact challenge across logic, patterns and problem-solving. One test, several ways to think.</p>
-        <div class="facts"><div><strong id="qcount">15</strong><span>QUESTIONS</span></div><div><strong>01</strong><span>CHALLENGE</span></div><div><strong>∞</strong><span>WAYS TO THINK</span></div></div>
-        <button id="btn-start" class="btn"><span>Start the test</span><b>↗</b></button>
-        <p class="disclaimer">An experimental quiz for curiosity — not a validated IQ assessment.</p>
-      </section>
-      <aside class="visual" aria-label="Editorial portraits">
-        <div class="photo photo-main"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1000&q=88" alt="Editorial portrait of a thoughtful man"><span class="photo-label">01 / PERSPECTIVE</span></div>
-        <div class="photo photo-top"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=88" alt="Editorial portrait of a woman"></div>
-        <div class="photo photo-bottom"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=700&q=88" alt="Fashion editorial portrait"></div>
-        <div class="visual-caption">CURIOSITY IS A FORM OF INTELLIGENCE.</div>
-      </aside>
-    </div>
-    <section id="screen-start" class="screen active">
-      <div class="start-panel"><div><span class="panel-kicker">BEFORE YOU BEGIN</span><h2>Clear your mind. Trust your thinking.</h2><p>Choose one answer for each question. Your score and explanations will appear at the end.</p></div><ul class="rules"><li>No external help</li><li>Work at your own pace</li><li>Review your answers at the end</li></ul></div>
-    </section>
-    <section id="screen-quiz" class="screen">
-      <div class="quiz-head"><span>QUESTION <b id="qnum">1</b> <i>/</i> <b id="qtotal">15</b></span><span>ELAPSED <b id="timer">00:00</b></span><span>SCORE <b id="score">0</b></span></div>
-      <div class="progress"><div id="bar"></div></div>
-      <h2 id="question">...</h2><div id="options" class="options"></div>
-      <div id="feedback" class="feedback" hidden></div>
-      <button id="btn-next" class="btn next-btn" hidden><span>Continue</span><b>→</b></button>
-    </section>
-    <section id="screen-result" class="screen">
-      <span class="panel-kicker">YOUR RESULTS</span><h2>Challenge complete.</h2>
-      <div class="result-box"><div class="big" id="result-score">0 / 15</div><div class="rank" id="result-rank">...</div><p id="result-text"></p><p class="small">TIME <b id="result-time">00:00</b></p></div>
-      <details><summary>Review your answers</summary><ol id="review" class="review"></ol></details>
-      <button id="btn-restart" class="btn"><span>Try again</span><b>↻</b></button>
-    </section>
-    <footer><span>© ROMAN KELDER TEST</span><span>THINK CLEARLY. STAY CURIOUS.</span></footer>
-  </main>
-  <script src="questions.js"></script><script src="script.js"></script>
+<a class="skip-link" href="#main">Skip to content</a>
+<main class="site-shell" id="main">
+<nav class="topbar"><a class="wordmark" href="./"><span class="mark" aria-hidden="true">R</span><span>ROMAN KELDER <i>TEST</i></span></a><span class="nav-note">A MULTI-AREA THINKING TEST</span></nav>
+<div class="layout">
+<section class="intro">
+<p class="eyebrow">A DIFFERENT KIND OF CHALLENGE</p>
+<h1>Explore how<br><em>you think.</em></h1>
+<p class="lead">Questions in logic, patterns, memory and more. A simple way to challenge different ways of thinking.</p>
+<div class="meta-line"><span id="qcount">15</span> QUESTIONS <span class="dot">·</span> SELF-PACED <span class="dot">·</span> INSTANT RESULTS</div>
+<button id="btn-start" class="btn"><span>Start the test</span><b aria-hidden="true">→</b></button>
+<p class="disclaimer">An experimental quiz for curiosity — not a validated IQ assessment.</p>
+</section>
+<aside class="visual" aria-label="Notable scientists and thinkers">
+<figure class="photo photo-main"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Marie_Curie_and_Albert_Einstein.jpg" alt="Marie Curie and Albert Einstein together at a 1929 meeting" loading="eager"><figcaption>MARIE CURIE <span>·</span> ALBERT EINSTEIN</figcaption></figure>
+<figure class="photo photo-secondary"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Alan_Turing_(1951).jpg" alt="Portrait of mathematician and computer scientist Alan Turing" loading="lazy"><figcaption>ALAN TURING</figcaption></figure>
+</aside>
+</div>
+<section id="screen-start" class="screen active" aria-label="Test introduction"></section>
+<section id="screen-quiz" class="screen" aria-live="polite">
+<div class="quiz-head"><span>QUESTION <b id="qnum">1</b> <i>/</i> <b id="qtotal">15</b></span><span>TIME <b id="timer">00:00</b></span><span>SCORE <b id="score">0</b></span></div>
+<div class="progress" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="100"><div id="bar"></div></div>
+<h2 id="question" tabindex="-1">...</h2><div id="options" class="options"></div><div id="feedback" class="feedback" role="status" hidden></div>
+<button id="btn-next" class="btn next-btn" hidden><span>Continue</span><b aria-hidden="true">→</b></button>
+</section>
+<section id="screen-result" class="screen">
+<p class="eyebrow">YOUR RESULTS</p><h2>Challenge complete.</h2>
+<div class="result-box"><div class="big" id="result-score">0 / 15</div><div class="rank" id="result-rank">...</div><p id="result-text"></p><p class="small">TIME <b id="result-time">00:00</b></p></div>
+<details><summary>Review your answers</summary><ol id="review" class="review"></ol></details>
+<button id="btn-restart" class="btn"><span>Try again</span><b aria-hidden="true">↻</b></button>
+</section>
+<footer><span>© ROMAN KELDER TEST</span><span>THINK CLEARLY. STAY CURIOUS.</span></footer>
+</main>
+<script src="questions.js"></script><script src="script.js"></script>
 </body></html>
