@@ -1,6 +1,6 @@
 (function(){
 "use strict";
-var categories=["Normal IQ","Real life IQ","Math IQ","Battle IQ","Survival IQ","Looks IQ","Emotional IQ","Logic IQ","Societal IQ","Creative IQ"];
+var categories=["Normal IQ","Real life IQ","Math IQ","Battle IQ","Survival IQ","Financial IQ","Emotional IQ","Logic IQ","Societal IQ","Creative IQ"];
 var hero=document.querySelector(".hero");
 var screens={start:document.getElementById("screen-start"),quiz:document.getElementById("screen-quiz"),result:document.getElementById("screen-result")};
 var e={qnum:document.getElementById("qnum"),qtotal:document.getElementById("qtotal"),timer:document.getElementById("timer"),score:document.getElementById("score"),bar:document.getElementById("bar"),question:document.getElementById("question"),options:document.getElementById("options"),feedback:document.getElementById("feedback"),next:document.getElementById("btn-next"),start:document.getElementById("btn-start"),restart:document.getElementById("btn-restart"),resultScore:document.getElementById("result-score"),resultRank:document.getElementById("result-rank"),resultText:document.getElementById("result-text"),resultTime:document.getElementById("result-time"),review:document.getElementById("review"),categoryScores:document.getElementById("category-scores"),categoryLabel:document.getElementById("category-label")};
