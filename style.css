@@ -27,3 +27,5 @@ footer{display:flex;justify-content:space-between;border-top:1px solid var(--lin
 @media(max-width:760px){.site-shell{width:min(100% - 36px,560px)}.layout{grid-template-columns:1fr;gap:35px;padding:58px 0 48px}.visual{height:330px;justify-self:center;width:min(100%,430px)}h1{font-size:clamp(49px,12vw,68px)}.start-panel{grid-template-columns:1fr;gap:20px;padding:23px}.nav-note{font-size:8px}.options{grid-template-columns:1fr}}
 @media(max-width:420px){.site-shell{width:calc(100% - 28px)}.visual{height:270px}.facts{gap:23px}.quiz-head{font-size:8px;letter-spacing:1px}footer{gap:12px;font-size:7px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+
+body:has(#screen-quiz.active) .layout,body:has(#screen-result.active) .layout{display:none}
