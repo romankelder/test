@@ -1,4 +1,5 @@
-// Roman Kelder Test: 50 progressive questions across ten categories.\nconst QUESTIONS = [
+// Roman Kelder Test: 50 progressive questions across ten categories.
+const QUESTIONS = [
   {
     "category": "Normal IQ",
     "level": 1,
@@ -649,4 +650,4 @@
     "answer": 1,
     "hint": "Treat unexpected results as evidence."
   }
-];\n
+];
