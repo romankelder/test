@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Roman Kelder Test</title>
+<style>
+:root{--bg:#080b08;--fg:#b7c7a4;--dim:#63745a;--green:#b6df79;--red:#b45a4d;--line:#263323}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:13px/1.5 "Lucida Console",Monaco,monospace}
+main{width:min(620px,calc(100% - 34px));margin:0 auto;padding:42px 0 60px}
+header{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:9px;color:var(--dim);font-size:10px;letter-spacing:1px}.brand{color:var(--green);font-weight:bold;font-size:12px}
+section{padding-top:38px}h1{font-size:24px;color:var(--green);font-weight:normal;margin:0 0 12px}h2{font-size:15px;color:#d0d9c5;font-weight:normal;margin:0 0 18px}p{font-size:12px;color:#87977c;max-width:460px;margin:0 0 22px}.small{font-size:10px;color:var(--dim);letter-spacing:.8px}
+button{font:inherit;cursor:pointer}.primary{background:#152012;color:var(--green);border:1px solid #526746;padding:9px 14px;font-size:11px;letter-spacing:.8px}.primary:hover{background:#22321a;border-color:var(--green)}.primary:disabled{opacity:.35;cursor:default}.hidden{display:none!important}
+.status{display:flex;justify-content:space-between;color:var(--dim);font-size:10px;margin-bottom:8px}.track{height:2px;background:#1c2719;margin-bottom:28px}.track span{display:block;height:2px;background:var(--green);width:0}.category{font-size:10px;color:var(--red);letter-spacing:1.3px;margin-bottom:10px;text-transform:uppercase}
+.answers{display:grid;gap:6px}.answer{display:flex;gap:11px;width:100%;text-align:left;background:transparent;border:1px solid #1d2a1a;color:#aab99e;padding:10px 11px;font-size:12px}.answer:hover,.answer.selected{border-color:#6b8554;background:#111b0f;color:#d4e2c8}.key{color:var(--green);font-size:10px;min-width:12px}
+.controls{display:flex;justify-content:space-between;align-items:center;margin-top:20px}.back{border:0;background:none;color:var(--dim);padding:8px 0;font-size:10px}.back:hover{color:var(--green)}.score{font-size:34px;color:var(--green);margin:12px 0 3px}.rows{margin-top:22px;border-top:1px solid var(--line)}.row{display:grid;grid-template-columns:150px 1fr 35px;gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid #1b2619;font-size:10px;color:#9eae91}.bar{height:3px;background:#202b1d}.bar i{display:block;height:3px;background:var(--green)}.note{margin-top:20px;font-size:10px;color:var(--dim);max-width:470px}
+@media(max-width:460px){main{padding-top:27px}.row{grid-template-columns:115px 1fr 32px}}
+</style></head><body><main>
+<header><span class="brand">RK_TEST.EXE</span><span>BUILD 2004.11 // LOCAL</span></header>
+<section id="home"><div class="small">SYSTEM READY / INPUT REQUIRED</div><h1>ROMAN KELDER TEST</h1><p>Multi-category cognitive assessment. 36 items. 12 test areas. Select one response per item.</p><button class="primary" id="start">[ EXECUTE TEST ]</button></section>
+<section id="quiz" class="hidden"><div class="status"><span id="counter">ITEM 01 / 36</span><span id="pct">03%</span></div><div class="track"><span id="fill"></span></div><div class="category" id="category"></div><h2 id="question"></h2><div class="answers" id="answers"></div><div class="controls"><button class="back" id="back">&lt; BACK</button><button class="primary" id="next" disabled>[ CONTINUE ]</button></div></section>
+<section id="results" class="hidden"><div class="small">PROCESS COMPLETE</div><h1>RESULT LOG</h1><div class="score" id="score">—</div><div class="small">CORRECT RESPONSES</div><div class="rows" id="rows"></div><p class="note">Experimental test only. Not a validated IQ test or scientific measure of intelligence.</p><button class="primary" id="again">[ RESTART ]</button></section>
+</main><script>
+const data=[
+["Logic","All Neris are Vals. No Vals are Tors. Can a Neri be a Tor?",["Yes","No","Sometimes","Not enough information"],1],
+["Logic","If the statement “A or B” is false, what must be true?",["A is true","B is true","Both are false","Both are true"],2],
+["Logic","Mira is older than Sol. Sol is older than Ren. Who is youngest?",["Mira","Sol","Ren","Cannot be determined"],2],
+["Mathematics","What is 15% of 240?",["24","30","36","40"],2],
+["Mathematics","A number is doubled and then 6 is added. The result is 20. What is the number?",["6","7","8","9"],1],
+["Mathematics","What comes next: 3, 6, 12, 24, ...?",["36","42","48","54"],2],
+["Spatial reasoning","A cube is painted on every face, then cut into 27 equal smaller cubes. How many have paint on exactly two faces?",["8","12","16","20"],1],
+["Spatial reasoning","A shape is rotated 180 degrees. Which property stays the same?",["Its orientation","Its colour","Its size","Its position"],2],
+["Spatial reasoning","A map uses 1 cm to represent 5 km. Two places are 7 cm apart. What is the real distance?",["12 km","25 km","30 km","35 km"],3],
+["Memory","Remember this sequence: 4 – 1 – 8 – 3 – 6. What was the third number?",["1","3","6","8"],3],
+["Memory","Which item appeared in this list: oak, glass, river, copper?",["Stone","Copper","Cloud","Silver"],1],
+["Memory","Remember: BLUE, 27, LAMP, 9. Which number appeared?",["17","19","27","29"],2],
+["Pattern recognition","What comes next: A, C, F, J, O, ...?",["S","T","U","V"],2],
+["Pattern recognition","Which number does not fit the pattern?",["16","25","36","48"],3],
+["Pattern recognition","Complete the pattern: ▲ ■ ▲ ■ ▲ ...",["▲","■","●","◆"],1],
+["Creativity","Which is the most unusual practical use for a paperclip?",["Bookmark","Small hook","Wire sculpture","All are possible"],3],
+["Creativity","You need to explain a difficult idea to a child. What is the best starting point?",["Use technical terms","Find a familiar comparison","Repeat the definition","Avoid examples"],1],
+["Creativity","A new idea can often come from:",["Combining unrelated concepts","Following the first idea","Avoiding all limits","Copying an existing solution"],0],
+["Strategy","You have limited time and three tasks. What should you consider first?",["Which is easiest","Which has the greatest impact and urgency","Which is most enjoyable","Which was assigned last"],1],
+["Strategy","An opponent repeatedly chooses the same move. What is the best response?",["Keep doing the same thing","Adapt to exploit the pattern","Quit immediately","Ignore their choices"],1],
+["Strategy","A plan is failing halfway through. What is generally the strongest response?",["Continue unchanged","Review the evidence and adjust","Blame the tools","Abandon the goal"],1],
+["Language","Which word is closest in meaning to “reluctant”?",["Eager","Unwilling","Certain","Careless"],1],
+["Language","Choose the clearest sentence.",["Due to the fact that it rained, we stayed in","Because it rained, we stayed in","It was raining, this caused staying in","Rain was the reason for indoors"],1],
+["Language","Book is to reading as fork is to ...",["Drawing","Eating","Writing","Listening"],1],
+["Observation","What is most useful when checking whether two accounts describe the same event?",["The writer's mood","Specific time and location","The length of each account","The vocabulary used"],1],
+["Observation","A price rises from 80 to 100. What is the percentage increase?",["20%","25%","30%","40%"],1],
+["Observation","A machine is louder than usual. What is the best first step?",["Assume it is fine","Check for a change or warning sign","Turn it up","Take it apart immediately"],1],
+["Problem solving","A lamp does not turn on. What is the most sensible first check?",["Replace the whole lamp","Check the power source","Paint the switch","Move the furniture"],1],
+["Problem solving","You have a 5-litre jug and a 3-litre jug. What is the greatest amount you can measure exactly using them?",["2 litres","3 litres","5 litres","8 litres"],3],
+["Problem solving","A task seems impossible. What is most likely to help?",["Break it into smaller parts","Work faster without a plan","Ignore the constraints","Wait for inspiration"],0],
+["Adaptability","A new tool changes how your team works. What is the best approach?",["Reject it immediately","Experiment and learn what works","Use it without checking","Wait for everyone else"],1],
+["Adaptability","You discover your original assumption was wrong. What should change first?",["Your conclusion","The evidence","The question itself","Nothing"],0],
+["Adaptability","When instructions are unclear, a good first step is to:",["Guess and continue","Identify what is unclear and ask","Stop permanently","Do everything at once"],1],
+["Social reasoning","A friend becomes unusually quiet during a conversation. What is a thoughtful response?",["Assume they are bored","Ask gently if something is on their mind","Speak louder","Change the subject immediately"],1],
+["Social reasoning","Two people disagree strongly. What is most likely to help?",["Decide who is right immediately","Understand what each person is concerned about","Avoid listening","Repeat your own point"],1],
+["Social reasoning","Someone gives you critical feedback. What is a useful first response?",["Dismiss it","Ask for a specific example","Argue immediately","Take it as a personal attack"],1]
+];
+let index=0,answers=Array(data.length).fill(null);const $=id=>document.getElementById(id);
+function screen(name){["home","quiz","results"].forEach(s=>$(s).classList.toggle("hidden",s!==name));}
+function draw(){const q=data[index],n=index+1,p=Math.round(n/data.length*100);$("counter").textContent=`ITEM ${String(n).padStart(2,"0")} / ${data.length}`;$("pct").textContent=String(p).padStart(2,"0")+"%";$("fill").style.width=p+"%";$("category").textContent=q[0].toUpperCase();$("question").textContent=q[1];$("answers").replaceChildren();q[2].forEach((v,i)=>{const b=document.createElement("button");b.className="answer"+(answers[index]===i?" selected":"");const k=document.createElement("span");k.className="key";k.textContent=String.fromCharCode(65+i);const t=document.createElement("span");t.textContent=v;b.append(k,t);b.onclick=()=>{answers[index]=i;draw();};$("answers").append(b);});$("back").style.visibility=index===0?"hidden":"visible";$("next").disabled=answers[index]===null;$("next").textContent=index===data.length-1?"[ FINISH ]":"[ CONTINUE ]";}
+function finish(){screen("results");let total=0,groups={};data.forEach((q,i)=>{if(!groups[q[0]])groups[q[0]]={right:0,count:0};groups[q[0]].count++;if(answers[i]===q[3]){total++;groups[q[0]].right++;}});$("score").textContent=total+" / "+data.length;$("rows").replaceChildren();Object.entries(groups).forEach(([name,g])=>{const r=document.createElement("div");r.className="row";const l=document.createElement("span");l.textContent=name;const m=document.createElement("div");m.className="bar";const f=document.createElement("i");f.style.width=(g.right/g.count*100)+"%";m.append(f);const v=document.createElement("span");v.textContent=g.right+"/"+g.count;r.append(l,m,v);$("rows").append(r);});}
+$("start").onclick=()=>{index=0;screen("quiz");draw();};$("back").onclick=()=>{if(index>0){index--;draw();}};$("next").onclick=()=>{if(answers[index]===null)return;if(index<data.length-1){index++;draw();}else finish();};$("again").onclick=()=>{index=0;answers=Array(data.length).fill(null);screen("home");};
+</script></body></html>
