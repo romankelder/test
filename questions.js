@@ -21,7 +21,7 @@ const QUESTIONS = [
       "Some Varns are Mips",
       "No Varns are Mips",
       "All Mips are Varns",
-      "Cannot tell"
+      "No relation can be inferred"
     ],
     "answer": 1,
     "hint": "Varns belong to a group that excludes Mips."
@@ -32,8 +32,8 @@ const QUESTIONS = [
     "q": "A clock loses 5 minutes per real hour. Set at noon, what does it show after 6 hours?",
     "options": [
       "5:15",
+      "5:25",
       "5:30",
-      "5:35",
       "5:45"
     ],
     "answer": 1,
@@ -70,10 +70,10 @@ const QUESTIONS = [
     "level": 1,
     "q": "Wrong venue, meeting starts in 10 minutes, correct venue is 15 minutes away. Best first move?",
     "options": [
-      "Leave without telling anyone",
-      "Contact organiser and ask to join remotely while travelling",
-      "Pretend you are there",
-      "Cancel"
+      "Leave now and explain after arrival",
+      "Contact organiser; request remote access en route",
+      "Ask another attendee to cover your place",
+      "Reschedule without contacting the organiser"
     ],
     "answer": 1,
     "hint": "Communicate early and offer a fallback."
@@ -83,10 +83,10 @@ const QUESTIONS = [
     "level": 2,
     "q": "A subscription renews tomorrow and you are unsure you need it. Best action?",
     "options": [
-      "Ignore it",
-      "Cancel without checking",
-      "Check usage, terms and deadline",
-      "Dispute it later"
+      "Ignore the renewal until it charges",
+      "Cancel immediately without reviewing terms",
+      "Review usage, terms and cancellation deadline",
+      "Wait for the charge and request a refund"
     ],
     "answer": 2,
     "hint": "Decide using usage and renewal terms."
@@ -96,10 +96,10 @@ const QUESTIONS = [
     "level": 3,
     "q": "A client deadline is today; an internal task is due next week. Prioritise?",
     "options": [
-      "The easier task",
-      "Client deadline and notify affected people",
-      "The task you enjoy",
-      "Do both at once"
+      "Finish the easiest task to build momentum",
+      "Prioritise the client deadline and alert others",
+      "Work on the internal task while available",
+      "Split time evenly between both tasks"
     ],
     "answer": 1,
     "hint": "Prioritise immediate impact and communicate."
@@ -109,10 +109,10 @@ const QUESTIONS = [
     "level": 4,
     "q": "A colleague's confident answer conflicts with report figures. What next?",
     "options": [
-      "Accept confidence",
-      "Change report quietly",
-      "Check source data together",
-      "Ignore both"
+      "Trust the colleague's confidence and experience",
+      "Edit the report to match the colleague's claim",
+      "Compare the report with its original source data",
+      "Set the disagreement aside until the deadline"
     ],
     "answer": 2,
     "hint": "Verify evidence before deciding."
@@ -122,10 +122,10 @@ const QUESTIONS = [
     "level": 5,
     "q": "You have 90 minutes, three errands, one shop closes in 25 minutes. Best plan?",
     "options": [
-      "Remembered order",
-      "Nearest first",
-      "Do closing-time errand, then optimise route and hours",
-      "Abandon all"
+      "Complete the nearest errand before considering hours",
+      "Choose errands based on your usual routine",
+      "Do the closing-time errand, then optimise the route",
+      "Skip the shop and complete the other two errands"
     ],
     "answer": 2,
     "hint": "Respect hard constraints, then reduce travel."
@@ -148,10 +148,10 @@ const QUESTIONS = [
     "level": 2,
     "q": "A price drops 20%, then rises 20%. Final price versus original?",
     "options": [
-      "Same",
-      "4% lower",
-      "4% higher",
-      "8% lower"
+      "The original price",
+      "4% below the original price",
+      "4% above the original price",
+      "8% below the original price"
     ],
     "answer": 1,
     "hint": "100 → 80 → 96."
@@ -161,10 +161,10 @@ const QUESTIONS = [
     "level": 3,
     "q": "3 workers take 8 hours. At the same rate, how long for 6 workers?",
     "options": [
-      "2h",
-      "4h",
-      "6h",
-      "16h"
+      "2 hours",
+      "4 hours",
+      "6 hours",
+      "16 hours"
     ],
     "answer": 1,
     "hint": "Twice the workers means half the time."
@@ -200,10 +200,10 @@ const QUESTIONS = [
     "level": 1,
     "q": "Your team is outnumbered in open ground. Safest high-level response?",
     "options": [
-      "Charge centre",
-      "Use cover, avoid being pinned, seek safer route or support",
-      "Split up",
-      "Wait in place"
+      "Advance directly across the open ground",
+      "Use cover and seek a safer route or support",
+      "Divide the team to approach from both sides",
+      "Hold position until the opponent moves"
     ],
     "answer": 1,
     "hint": "Avoid a direct disadvantage; coordinate and disengage safely."
@@ -213,10 +213,10 @@ const QUESTIONS = [
     "level": 2,
     "q": "An opponent repeatedly overcommits after a feint. Best adjustment?",
     "options": [
-      "Repeat unchanged",
-      "Exploit the pattern while maintaining defence",
-      "Stop observing",
-      "Become reckless"
+      "Repeat the same feint to maintain pressure",
+      "Adapt to the pattern while protecting your defence",
+      "Stop tracking the opponent's reactions",
+      "Commit more quickly to every exchange"
     ],
     "answer": 1,
     "hint": "Adapt without sacrificing defence."
@@ -226,10 +226,10 @@ const QUESTIONS = [
     "level": 3,
     "q": "Two objectives: one valuable but high-risk, one modest and low-risk. Decide based on?",
     "options": [
-      "Value only",
-      "Ease only",
-      "Value, risk, time and cost of failure",
-      "Equal split always"
+      "Compare the objectives by their headline value",
+      "Choose the option with the lowest immediate risk",
+      "Weigh value, risk, time and failure costs",
+      "Give both objectives an equal share of effort"
     ],
     "answer": 2,
     "hint": "Weigh reward against risk and opportunity cost."
@@ -239,10 +239,10 @@ const QUESTIONS = [
     "level": 4,
     "q": "An opponent changes tactics after your counter. What follows?",
     "options": [
-      "They are predictable",
-      "Reassess; do not blindly repeat your response",
-      "Ignore the change",
-      "You have lost"
+      "Assume the original counter will still work",
+      "Reassess before choosing another response",
+      "Ignore the change and keep your position",
+      "Treat the change as proof you have lost"
     ],
     "answer": 1,
     "hint": "Strategy must update when others adapt."
@@ -252,10 +252,10 @@ const QUESTIONS = [
     "level": 5,
     "q": "You are leading late and an opponent tries to provoke a risky response. Best move?",
     "options": [
-      "Needless gamble",
-      "Protect advantage and answer genuine threats",
-      "Chase every provocation",
-      "Abandon plan"
+      "Take a major risk to increase the lead",
+      "Protect the advantage and answer real threats",
+      "Respond to every provocation immediately",
+      "Abandon the plan and change tactics"
     ],
     "answer": 1,
     "hint": "Avoid unnecessary variance when ahead."
@@ -265,10 +265,10 @@ const QUESTIONS = [
     "level": 1,
     "q": "Lost outdoors at dusk; phone has 8% battery and no signal. Prioritise?",
     "options": [
-      "Stream music",
-      "Conserve battery, stay put if safe, make yourself visible",
-      "Walk randomly",
-      "Turn phone off and wander"
+      "Use the remaining battery for entertainment",
+      "Conserve power, stay safe and improve visibility",
+      "Walk in one direction until you find a road",
+      "Switch off the phone and keep moving"
     ],
     "answer": 1,
     "hint": "Conserve resources and avoid worsening the situation."
@@ -278,10 +278,10 @@ const QUESTIONS = [
     "level": 2,
     "q": "You find an unknown wild mushroom. Safest choice?",
     "options": [
-      "Taste a little",
-      "Cook it",
-      "Do not eat it",
-      "Feed it to an animal"
+      "Taste a small amount to identify it",
+      "Cook it thoroughly before eating",
+      "Do not eat an unidentified mushroom",
+      "Offer it to an animal to test"
     ],
     "answer": 2,
     "hint": "Poisonous species can resemble edible ones."
@@ -293,7 +293,7 @@ const QUESTIONS = [
     "options": [
       "Sunburn",
       "Hypothermia",
-      "Dehydration only",
+      "Dehydration",
       "Altitude sickness"
     ],
     "answer": 1,
@@ -304,10 +304,10 @@ const QUESTIONS = [
     "level": 4,
     "q": "You smell gas inside a building. First action?",
     "options": [
-      "Turn lights on",
-      "Call from inside",
-      "Avoid switches/flames, leave, call emergency services outside",
-      "Inspect appliance"
+      "Turn on lights to inspect the room",
+      "Call emergency services before leaving",
+      "Avoid switches and flames; call outside",
+      "Check the appliance for a visible leak"
     ],
     "answer": 2,
     "hint": "Leave without operating electrical devices."
@@ -317,10 +317,10 @@ const QUESTIONS = [
     "level": 5,
     "q": "Officials order evacuation for an approaching wildfire. Correct response?",
     "options": [
-      "Wait for visible flames",
-      "Evacuate promptly via official routes",
-      "Drive toward it",
-      "Hide in shed"
+      "Wait until flames are visible nearby",
+      "Evacuate promptly using official routes",
+      "Drive closer to check the fire's direction",
+      "Shelter in an outbuilding until advised"
     ],
     "answer": 1,
     "hint": "Do not wait for the fire front."
@@ -330,10 +330,10 @@ const QUESTIONS = [
     "level": 1,
     "q": "What makes visual comparison between two portraits most reliable?",
     "options": [
-      "Different lighting",
-      "Same lighting, distance, angle and lens",
-      "Different expressions",
-      "Beauty filter"
+      "Compare portraits taken under different lighting",
+      "Use the same light, angle, distance and lens",
+      "Choose images with different facial expressions",
+      "Apply the same beauty filter to both portraits"
     ],
     "answer": 1,
     "hint": "Control photographic variables."
@@ -343,10 +343,10 @@ const QUESTIONS = [
     "level": 2,
     "q": "A close portrait makes the nose look unusually large. Likely cause?",
     "options": [
-      "Wide-angle lens very close",
-      "Long lens from farther away",
-      "Soft light",
-      "Neutral background"
+      "A wide lens used from very close range",
+      "A long lens used from farther away",
+      "Soft lighting placed in front of the face",
+      "A plain background behind the subject"
     ],
     "answer": 0,
     "hint": "Close wide-angle perspective exaggerates nearer features."
@@ -356,10 +356,10 @@ const QUESTIONS = [
     "level": 3,
     "q": "Comparing outfits for a formal event: most useful criteria?",
     "options": [
-      "Brand alone",
-      "Fit, dress code, colour harmony and context",
-      "Price",
-      "Ignore proportions"
+      "Consider the brand before checking the fit",
+      "Assess fit, dress code, colour and context",
+      "Choose the most expensive available outfit",
+      "Prioritise trendiness over the event's formality"
     ],
     "answer": 1,
     "hint": "Appearance is contextual; fit and appropriateness matter."
@@ -369,10 +369,10 @@ const QUESTIONS = [
     "level": 4,
     "q": "A room feels unbalanced despite matching furniture. Examine?",
     "options": [
-      "Price",
-      "Visual weight, spacing, scale and distribution",
-      "Age",
-      "Object count only"
+      "Compare the furniture's price and age",
+      "Assess visual weight, spacing and scale",
+      "Count objects on each side of the room",
+      "Check whether every item is from one range"
     ],
     "answer": 1,
     "hint": "Balance depends on scale, spacing and visual weight."
@@ -382,10 +382,10 @@ const QUESTIONS = [
     "level": 5,
     "q": "Two photos of the same person create different impressions. Best conclusion?",
     "options": [
-      "One reveals true worth",
-      "Pose, light, lens, styling and expression differ",
-      "Flattering photo is truer",
-      "Photo proves personality"
+      "One image reveals the person's real character",
+      "Pose, lighting, lens and styling affect impressions",
+      "The more flattering image is always accurate",
+      "A photograph reliably reveals personality"
     ],
     "answer": 1,
     "hint": "A photo cannot establish a person's worth or personality."
@@ -395,10 +395,10 @@ const QUESTIONS = [
     "level": 1,
     "q": "A friend says 'I'm fine' but seems quiet. Best response?",
     "options": [
-      "Demand explanation",
-      "Offer to listen without pressure",
-      "Say they overreact",
-      "Change subject"
+      "Ask them to explain themselves immediately",
+      "Offer to listen and leave the choice to them",
+      "Tell them they are making too much of it",
+      "Change the subject to avoid discomfort"
     ],
     "answer": 1,
     "hint": "Offer support and respect their choice."
@@ -408,10 +408,10 @@ const QUESTIONS = [
     "level": 2,
     "q": "Someone criticises your work publicly. Constructive first response?",
     "options": [
-      "Insult them",
-      "Pause and ask for specific examples",
-      "Walk out",
-      "Reject all criticism"
+      "Respond with a personal criticism of your own",
+      "Pause and ask for concrete examples",
+      "Leave before hearing the full feedback",
+      "Dismiss the criticism without discussion"
     ],
     "answer": 1,
     "hint": "Regulate your reaction and clarify useful information."
@@ -421,10 +421,10 @@ const QUESTIONS = [
     "level": 3,
     "q": "A teammate is upset after a mistake. What helps?",
     "options": [
-      "Remind them repeatedly",
-      "Listen, acknowledge impact, discuss repair",
-      "Tell everyone",
-      "Pretend nothing happened"
+      "Remind them that mistakes have consequences",
+      "Listen, acknowledge the impact and discuss repair",
+      "Tell the rest of the team what happened",
+      "Move on without acknowledging their reaction"
     ],
     "answer": 1,
     "hint": "Empathy plus a path forward."
@@ -434,10 +434,10 @@ const QUESTIONS = [
     "level": 4,
     "q": "You misunderstood a message and reacted sharply. Best repair?",
     "options": [
-      "Wait for apology",
+      "Wait for them to apologise first",
       "Own your assumption and apologise clearly",
-      "Blame their wording",
-      "Delete chat"
+      "Explain why their wording caused your reaction",
+      "Delete the message and avoid the topic"
     ],
     "answer": 1,
     "hint": "Take responsibility without shifting blame."
@@ -447,10 +447,10 @@ const QUESTIONS = [
     "level": 5,
     "q": "Two friends in conflict each want you to take sides. Fairest approach?",
     "options": [
-      "Agree with first",
-      "Repeat private comments",
+      "Agree with whichever friend spoke first",
+      "Share each friend's private comments openly",
       "Set boundaries and encourage direct discussion",
-      "Avoid both forever"
+      "End both friendships to avoid taking sides"
     ],
     "answer": 2,
     "hint": "Protect confidences and avoid escalating conflict."
@@ -460,10 +460,10 @@ const QUESTIONS = [
     "level": 1,
     "q": "'The key is in the box' and 'The key is not in the box.' Exactly one is true. What follows?",
     "options": [
-      "Both true",
-      "Neither true",
-      "Exactly one must be true",
-      "Unrelated"
+      "Both statements can be true at once",
+      "Neither statement can be true",
+      "Exactly one statement must be true",
+      "The statements have no logical connection"
     ],
     "answer": 2,
     "hint": "They are exact negations."
@@ -473,10 +473,10 @@ const QUESTIONS = [
     "level": 2,
     "q": "Three switches outside a room control one incandescent bulb. Enter once. How identify its switch?",
     "options": [
-      "Turn one on and enter",
-      "Run one, turn it off, turn another on; use light and bulb warmth",
-      "Turn all on",
-      "Impossible"
+      "Turn one switch on and enter immediately",
+      "Use light and residual bulb heat after switching",
+      "Turn all three switches on before entering",
+      "Try each switch in turn after entering"
     ],
     "answer": 1,
     "hint": "On/off state and residual heat distinguish switches."
@@ -512,10 +512,10 @@ const QUESTIONS = [
     "level": 5,
     "q": "12 coins; one counterfeit, heavier or lighter. Minimum balance weighings to identify it and direction?",
     "options": [
-      "2",
-      "3",
-      "4",
-      "6"
+      "2 weighings",
+      "3 weighings",
+      "4 weighings",
+      "6 weighings"
     ],
     "answer": 1,
     "hint": "Three weighings distinguish 24 possibilities."
@@ -525,10 +525,10 @@ const QUESTIONS = [
     "level": 1,
     "q": "Crime rate rises from 1 to 2 per 10,000. Best interpretation?",
     "options": [
-      "Crime common everywhere",
-      "Relative rate doubled; absolute rise is 1 per 10,000",
-      "Twice as dangerous in every way",
-      "Cause proven"
+      "Crime has become common in every area",
+      "The rate doubled, rising by one per 10,000",
+      "Every resident faces twice the overall risk",
+      "The increase proves a particular cause"
     ],
     "answer": 1,
     "hint": "Relative and absolute changes both matter."
@@ -538,10 +538,10 @@ const QUESTIONS = [
     "level": 2,
     "q": "A viral post makes a serious claim but gives no source. Before sharing?",
     "options": [
-      "Share popularity",
-      "Check original evidence and independent reporting",
-      "Trust comments",
-      "Assume image genuine"
+      "Share it because many people agree",
+      "Check primary evidence and independent sources",
+      "Use the comment section to assess accuracy",
+      "Assume the image proves the claim"
     ],
     "answer": 1,
     "hint": "Popularity is not verification."
@@ -551,10 +551,10 @@ const QUESTIONS = [
     "level": 3,
     "q": "A policy benefits most people but severely burdens a vulnerable minority. Evaluate how?",
     "options": [
-      "Majority only",
-      "Assess benefits, harm distribution, rights and alternatives",
-      "Reject all unequal effects",
-      "Ignore harm if popular"
+      "Focus on the total number who benefit",
+      "Assess benefits, harms, rights and alternatives",
+      "Reject the policy whenever effects differ",
+      "Ignore minority harm if support is high"
     ],
     "answer": 1,
     "hint": "Consider outcomes and fairness."
@@ -564,10 +564,10 @@ const QUESTIONS = [
     "level": 4,
     "q": "A graph axis starts at 95 and bars show 96 versus 97. Main concern?",
     "options": [
-      "Data fabricated",
-      "Truncated axis exaggerates a small difference",
-      "Bars cannot show numbers",
-      "Values identical"
+      "The figures must have been fabricated",
+      "The truncated axis makes a small gap look large",
+      "A bar chart cannot compare close values",
+      "The two values should be treated as equal"
     ],
     "answer": 1,
     "hint": "Truncated axes can magnify differences."
@@ -577,10 +577,10 @@ const QUESTIONS = [
     "level": 5,
     "q": "Debate is dominated by extremes, while most residents hold mixed views. Best interpretation?",
     "options": [
-      "Extremes represent all",
-      "Loudest voices may not represent opinion distribution",
-      "Compromise always right",
-      "Opinion unmeasurable"
+      "The loudest positions represent most residents",
+      "Visible voices may not reflect the wider population",
+      "A compromise must always be the correct view",
+      "Public opinion cannot be measured reliably"
     ],
     "answer": 1,
     "hint": "Visibility is not representativeness."
@@ -590,10 +590,10 @@ const QUESTIONS = [
     "level": 1,
     "q": "Design a chair from cardboard and string. Best first step?",
     "options": [
-      "Decorate",
-      "Define load, stability and constraints; prototype",
-      "Copy chair exactly",
-      "Use maximum string"
+      "Start by choosing colours and decoration",
+      "Define constraints, then build and test a prototype",
+      "Copy an existing chair without changing its design",
+      "Use as much string as the materials allow"
     ],
     "answer": 1,
     "hint": "Define constraints before testing a structure."
@@ -603,10 +603,10 @@ const QUESTIONS = [
     "level": 2,
     "q": "A team has 30 similar ideas. How expand the range?",
     "options": [
-      "Vote",
-      "Change perspective or constraint and generate different concepts",
-      "Delete unusual ideas",
-      "Repeat prompt"
+      "Choose the most popular idea and develop it",
+      "Change perspective or constraints to generate alternatives",
+      "Remove unusual ideas before further discussion",
+      "Ask everyone to repeat their first suggestion"
     ],
     "answer": 1,
     "hint": "Reframing breaks out of one solution cluster."
@@ -616,10 +616,10 @@ const QUESTIONS = [
     "level": 3,
     "q": "Users misunderstand a product control. Most useful creative response?",
     "options": [
-      "Longer manual",
-      "Redesign around user expectations and test",
-      "Blame users",
-      "Add controls"
+      "Write a longer manual explaining every control",
+      "Redesign the control and test it with users",
+      "Tell users to pay closer attention next time",
+      "Add more controls to make choices clearer"
     ],
     "answer": 1,
     "hint": "Redesign the source of confusion."
@@ -629,10 +629,10 @@ const QUESTIONS = [
     "level": 4,
     "q": "Explain a complex idea to children, engineers and policymakers. Best strategy?",
     "options": [
-      "Same jargon",
-      "Keep core idea; adapt analogies, detail and evidence",
-      "Remove nuance",
-      "Pictures only"
+      "Use the same technical language for each audience",
+      "Adapt examples and detail while keeping the core idea",
+      "Remove all nuance to make the message simpler",
+      "Replace the explanation entirely with pictures"
     ],
     "answer": 1,
     "hint": "Adapt presentation without changing meaning."
@@ -642,10 +642,10 @@ const QUESTIONS = [
     "level": 5,
     "q": "A prototype fails unexpectedly but reveals a new capability. Next move?",
     "options": [
-      "Discard it",
-      "Study the failure and test whether the new behaviour serves the goal",
-      "Declare success",
-      "Repeat unchanged"
+      "Discard the prototype because the test failed",
+      "Study the failure and test its unexpected capability",
+      "Call the result a success without further testing",
+      "Repeat the same test without changing anything"
     ],
     "answer": 1,
     "hint": "Treat unexpected results as evidence."
