@@ -1,57 +1,20 @@
-:root{color-scheme:dark;--bg:#0b0e13;--panel:#111720;--text:#f0f2f5;--muted:#a3adba;--line:#293440;--accent:#b7c7d9}
-*{box-sizing:border-box}
-html{min-height:100%;background:var(--bg);scroll-behavior:smooth}
-body{margin:0;min-height:100vh;background:var(--bg);color:var(--text);font:16px/1.65 "DM Sans",Arial,sans-serif}
-.site-shell{width:min(100% - 48px,980px);margin:0 auto;padding:22px 0 20px}
-.skip-link{position:absolute;left:12px;top:-60px;padding:10px 14px;background:#fff;color:#111;z-index:10}.skip-link:focus{top:10px}
-.topbar{height:48px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
-.wordmark{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;font:700 11px "Manrope";letter-spacing:1.3px}.wordmark i{font-style:normal;color:var(--muted);font-weight:500}
-.mark{display:grid;place-items:center;width:26px;height:26px;border:1px solid #63788f;border-radius:50%;font:700 12px "Manrope";color:#dce6f0}
-.nav-note,.eyebrow,.meta-line,footer{font-size:10px;letter-spacing:1.3px;font-weight:600;color:var(--muted)}
-.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);align-items:center;gap:9%;padding:72px 0 62px}
-.intro{max-width:460px}.eyebrow{margin:0 0 17px;color:#b7c7d9}
-h1{font:650 clamp(46px,6.2vw,70px)/1.02 "Manrope";letter-spacing:-3.5px;margin:0 0 20px}h1 em{font-style:normal;color:#91a9c2}
-.lead{max-width:390px;color:#c0c8d2;font-size:17px;line-height:1.7;margin:0}
-.meta-line{margin:26px 0 24px;font-size:9px}.meta-line .dot{padding:0 7px;color:#637487}
-.btn{display:flex;align-items:center;justify-content:space-between;gap:42px;min-width:190px;min-height:48px;padding:12px 16px;border:1px solid #c4d2df;border-radius:3px;background:#dce6ef;color:#111820;font:700 13px "DM Sans";cursor:pointer;transition:background .15s}.btn b{font-size:18px;font-weight:500}.btn:hover{background:#fff}.btn:focus-visible,button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #a9c5e0;outline-offset:3px}
-.disclaimer{font-size:12px;color:var(--muted);margin-top:13px}
-.visual{display:grid;grid-template-columns:1.35fr .8fr;gap:12px;align-items:end;max-width:440px;width:100%;justify-self:end}
-.photo{margin:0;min-width:0;background:var(--panel);border:1px solid var(--line);padding:7px}.photo img{display:block;width:100%;height:100%;object-fit:cover;filter:grayscale(100%);background:#1b232d}
-.photo-main{height:315px}.photo-main img{height:270px}.photo-secondary{height:220px}.photo-secondary img{height:175px}
-.photo figcaption{padding:8px 3px 1px;color:#d0d8e1;font-size:8px;line-height:1.4;letter-spacing:1px;font-weight:600}.photo figcaption span{color:#71849a}
-.screen{display:none}.screen.active{display:block}.screen.active:empty{display:none}
-.quiz-head{display:flex;justify-content:space-between;padding:0 0 13px;border-bottom:1px solid var(--line);font-size:10px;letter-spacing:1.2px;color:var(--muted)}.quiz-head b{color:var(--text)}.quiz-head i{font-style:normal;color:#718092}
-.progress{height:3px;background:#222c37;margin:15px 0 34px}.progress>div{height:100%;width:0;background:#a9bfd5;transition:width .2s}
-#question{max-width:720px;font:600 clamp(22px,3vw,29px)/1.4 "Manrope";letter-spacing:-.5px;margin:0 0 24px}
-.options{display:grid;grid-template-columns:1fr 1fr;gap:10px}.option{display:flex;align-items:center;gap:12px;min-height:56px;padding:13px 15px;border:1px solid var(--line);border-radius:3px;background:var(--panel);color:#edf0f4;text-align:left;font:14px/1.45 "DM Sans";cursor:pointer}.option:hover:not(:disabled){border-color:#829ab3;background:#182331}.option .letter{color:#a9bfd5;font-size:11px;font-weight:700}.option:disabled{cursor:default}.option.correct{border-color:#527d69;background:#14251e;color:#c1e0ce}.option.wrong{border-color:#87585b;background:#281a1d;color:#e4c1c2}
-.feedback{margin-top:18px;padding:14px 16px;border-left:2px solid #8da9c7;background:var(--panel);color:#d0d8e1;font-size:14px}.feedback.ok{border-color:#75a58a}.feedback.no{border-color:#b77d80}.next-btn{margin-top:20px}
-.result-box{margin:18px 0;padding:24px;background:var(--panel);border:1px solid var(--line)}.big{font:700 46px "Manrope";letter-spacing:-2px}.rank{color:#b7c7d9;font-weight:600}.result-box p{color:#c0c8d2}.small{font-size:11px;color:var(--muted)}details{margin:18px 0;color:#d0d8e1}summary{cursor:pointer;color:#c2d1df}.review{font-size:13px;padding-left:22px}.review li{margin:8px 0}.review .good{color:#9fc6aa}.review .bad{color:#d6a0a0}
-footer{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:15px;font-size:9px}
-@media(max-width:700px){
-.site-shell{width:calc(100% - 36px);padding-top:14px}
-.layout{grid-template-columns:1fr;gap:28px;padding:44px 0 35px}
-.intro{max-width:560px}h1{font-size:clamp(44px,11vw,60px);letter-spacing:-2.5px}
-.lead{font-size:16px}.meta-line{margin:20px 0}.visual{justify-self:start;max-width:100%;grid-template-columns:1.2fr .8fr;gap:9px}
-.photo-main{height:245px}.photo-main img{height:205px}.photo-secondary{height:185px}.photo-secondary img{height:145px}
-.options{grid-template-columns:1fr}
-}
-@media(max-width:420px){
-.site-shell{width:calc(100% - 28px)}.nav-note{font-size:8px;letter-spacing:.7px}
-.layout{padding-top:35px}.visual{grid-template-columns:1fr 1fr}.photo-main{height:208px}.photo-main img{height:168px}.photo-secondary{height:165px}.photo-secondary img{height:125px}
-.quiz-head{font-size:8px;letter-spacing:.7px}.progress{margin-bottom:26px}
-footer{gap:12px;font-size:7px;letter-spacing:.7px}
-}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
-/* Minimal image-led homepage */
-.site-shell{width:min(100% - 36px,1120px);min-height:100svh;padding:28px 0;display:flex;flex-direction:column}
-.hero{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:12px 0 28px}
-.hero-image{width:min(100%,440px);height:min(42svh,390px);min-height:190px;overflow:hidden;background:#111720}
-.hero-image img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;filter:grayscale(100%)}
-.hero-content{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
-.hero-content h1{margin:0;font:650 clamp(28px,5vw,42px)/1.15 "Manrope",sans-serif;letter-spacing:-1.5px;color:var(--text)}
-.hero-content .btn{justify-content:center;min-width:190px;gap:22px}
-@media(max-width:700px){.site-shell{width:calc(100% - 28px);padding:18px 0}.hero{gap:18px;padding:8px 0 22px}.hero-image{width:min(100%,340px);height:38svh;min-height:180px;max-height:320px}.hero-content h1{font-size:30px}}
-
-.category-scores{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0 24px}.category-score{display:grid;grid-template-columns:1fr auto;gap:3px 12px;padding:14px;background:var(--panel);border:1px solid var(--line)}.category-score span{font-size:13px;color:#dce3eb}.category-score strong{font:700 24px Manrope;color:#eaf0f6}.category-score small{grid-column:1/-1;color:var(--muted);font-size:11px}@media(max-width:520px){.category-scores{grid-template-columns:1fr}}
-
-.hero[hidden]{display:none}
+(function(){
+"use strict";
+var categories=["Normal IQ","Real life IQ","Math IQ","Battle IQ","Survival IQ","Looks IQ","Emotional IQ","Logic IQ","Societal IQ","Creative IQ"];
+var hero=document.querySelector(".hero");
+var screens={start:document.getElementById("screen-start"),quiz:document.getElementById("screen-quiz"),result:document.getElementById("screen-result")};
+var e={qnum:document.getElementById("qnum"),qtotal:document.getElementById("qtotal"),timer:document.getElementById("timer"),score:document.getElementById("score"),bar:document.getElementById("bar"),question:document.getElementById("question"),options:document.getElementById("options"),feedback:document.getElementById("feedback"),next:document.getElementById("btn-next"),start:document.getElementById("btn-start"),restart:document.getElementById("btn-restart"),resultScore:document.getElementById("result-score"),resultRank:document.getElementById("result-rank"),resultText:document.getElementById("result-text"),resultTime:document.getElementById("result-time"),review:document.getElementById("review"),categoryScores:document.getElementById("category-scores"),categoryLabel:document.getElementById("category-label")};
+var index=0,answers=[],startTime=0,tick=null,questions=QUESTIONS.slice();
+function show(name){hero.hidden=name!=="start";Object.keys(screens).forEach(function(k){screens[k].classList.toggle("active",k===name);});window.scrollTo(0,0);}
+function fmt(ms){var s=Math.floor(ms/1000),m=Math.floor(s/60);s%=60;return (m<10?"0":"")+m+":"+(s<10?"0":"")+s;}
+function render(){var item=questions[index];e.qnum.textContent=index+1;e.qtotal.textContent=50;e.score.textContent=answers.filter(function(a){return a.right;}).length;e.bar.style.width=(index/50*100)+"%";e.categoryLabel.textContent=item.category.toUpperCase()+" · LEVEL "+item.level;e.question.textContent=item.q;e.options.innerHTML="";e.feedback.hidden=true;e.next.hidden=true;
+item.options.forEach(function(label,i){var b=document.createElement("button");b.type="button";b.className="option";var l=document.createElement("span");l.className="letter";l.textContent=["A.","B.","C.","D."][i];b.append(l,document.createTextNode(label));b.addEventListener("click",function(){choose(i);});e.options.appendChild(b);});}
+function choose(i){var item=questions[index],right=i===item.answer,buttons=e.options.querySelectorAll(".option");buttons.forEach(function(b,n){b.disabled=true;if(n===item.answer)b.classList.add("correct");if(n===i&&!right)b.classList.add("wrong");});answers.push({chosen:i,right:right});e.score.textContent=answers.filter(function(a){return a.right;}).length;e.feedback.hidden=false;e.feedback.className="feedback "+(right?"ok":"no");e.feedback.textContent=(right?"CORRECT. ":"NOT QUITE. ")+item.hint;e.next.textContent=index===49?"VIEW RESULTS →":"NEXT →";e.next.hidden=false;e.next.focus();}
+function finish(){clearInterval(tick);e.bar.style.width="100%";var correct=answers.filter(function(a){return a.right;}).length;var scores=categories.map(function(c){var hits=questions.reduce(function(n,q,i){return n+(q.category===c&&answers[i].right?1:0);},0);return {category:c,correct:hits,score:[0,50,70,90,105,120][hits]};});var total=Math.round(scores.reduce(function(n,s){return n+s.score;},0)/10)+(correct===50?5:0);e.resultScore.textContent=total;e.resultRank.textContent="TOTAL RKT SCORE";e.resultText.textContent=correct+" of 50 correct · Each category is scored separately; a perfect overall run earns a +5 RKT bonus. Experimental score, not a validated IQ measure.";e.resultTime.textContent=fmt(Date.now()-startTime);e.categoryScores.innerHTML="";
+scores.forEach(function(s){var card=document.createElement("div");card.className="category-score";var name=document.createElement("span");name.textContent=s.category;var value=document.createElement("strong");value.textContent=s.score;var detail=document.createElement("small");detail.textContent=s.correct+" / 5 correct";card.append(name,value,detail);e.categoryScores.appendChild(card);});
+e.review.innerHTML="";questions.forEach(function(q,n){var a=answers[n],li=document.createElement("li");li.appendChild(document.createTextNode("["+q.category+"] "+q.q+" "));var span=document.createElement("span");span.className=a.right?"good":"bad";span.textContent=a.right?"[correct]":"[your answer: "+q.options[a.chosen]+" / correct: "+q.options[q.answer]+"]";li.appendChild(span);e.review.appendChild(li);});show("result");}
+function begin(){index=0;answers=[];show("quiz");render();startTime=Date.now();e.timer.textContent="00:00";clearInterval(tick);tick=setInterval(function(){e.timer.textContent=fmt(Date.now()-startTime);},500);}
+e.start.addEventListener("click",begin);e.restart.addEventListener("click",begin);e.next.addEventListener("click",function(){if(index<49){index++;render();}else finish();});e.qtotal.textContent="50";
+})();
+/* Result reveal and rank styling */
+#screen-result.active{animation:result-in .65s ease both}.result-box{position:relative;overflow:hidden}.big{font-size:clamp(56px,10vw,82px);line-height:1.05;animation:score-pop .7s cubic-bezier(.2,.8,.2,1) both}.rank{display:inline-block;margin-top:10px;padding:7px 12px;border:1px solid #8da9c7;border-radius:2px;letter-spacing:2px;font:700 12px "Manrope";animation:rank-in .8s .35s both}.result-box:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 30%,#ffffff0b 50%,transparent 70%);transform:translateX(-120%);animation:shine 1.4s .2s ease-out both}@keyframes result-in{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}@keyframes score-pop{from{opacity:0;transform:scale(.72)}to{opacity:1;transform:scale(1)}}@keyframes rank-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}@keyframes shine{to{transform:translateX(120%)}}@media(prefers-reduced-motion:reduce){#screen-result.active,.big,.rank,.result-box:after{animation:none}}
