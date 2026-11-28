@@ -9,29 +9,40 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261128-clinical5">
+<link rel="stylesheet" href="style.css?v=20261128-simpletics1">
 </head>
 <body>
+<div class="announcement-bar"><span>NORDEN LAB</span><i></i><span>KLINISK HUDVÅRD · EN GENOMTÄNKT RUTIN</span></div>
 <header class="header">
   <a class="brand" href="#" aria-label="NORDEN LAB startsida"><span class="brand-mark">N</span><span>NORDEN LAB<span class="brand-sub">KLINISK HUDVÅRD</span></span></a>
-  <nav aria-label="Huvudmeny"><a href="#catalogue">Sortiment</a><a href="#approach">Vår filosofi</a></nav>
+  <nav aria-label="Huvudmeny"><a href="#catalogue">Sortiment</a><a href="#routine">Hudvårdsrutinen</a><a href="#approach">Vår filosofi</a></nav>
   <div class="header-actions"><button class="account-trigger" id="open-account" type="button">MIN NORDEN</button><button class="cart-trigger" id="open-cart" type="button">VARUKORG <span id="cart-count">0</span></button></div>
 </header>
 <main>
   <section class="hero hero-lab" aria-label="NORDEN LAB">
     <div class="lab-heading">
       <p class="eyebrow">NORDEN LAB <span>/</span> DERMATOLOGISK HUDVÅRD</p>
-      <h1>Klinisk hudvård<span>.</span></h1>
+      <h1>Hudvård,<br><em>utan överflöd.</em></h1>
+      <p class="hero-intro">Ett noga utvalt sortiment med fokus på ingredienser, funktion och en rutin som är enkel att följa.</p>
+      <a class="hero-cta" href="#catalogue">Upptäck sortimentet <span aria-hidden="true">→</span></a>
+      <p class="hero-meta">UTVALDA FORMULERINGAR <span>·</span> GENOMTÄNKTA RUTINER</p>
     </div>
     <div class="lab-visual" aria-hidden="true">
       <div class="lab-grid"></div>
+      <div class="lab-visual-index">N / LAB <span>EST. 2026</span></div>
       <div class="lab-vial"><i></i><b>N / LAB</b><small>FORMULA 001</small></div>
       <div class="lab-cross"></div>
+      <div class="lab-visual-spec">01<br><span>FORMULA<br>STUDY</span></div>
       <span class="lab-visual-note">HUDVÅRD · FORMULA · FUNKTION</span>
     </div>
   </section>
+  <section class="value-strip" aria-label="NORDEN LAB:s fokus">
+    <div><span>01</span><strong>Utvalt sortiment</strong></div>
+    <div><span>02</span><strong>Ingrediensfokus</strong></div>
+    <div><span>03</span><strong>En enkel rutin</strong></div>
+  </section>
   <section class="catalogue" id="catalogue">
-    <div class="section-head"><div><p class="eyebrow">NORDEN LAB-URVAL</p><h2>Fem utvalda favoriter</h2></div><p class="section-note">Ett fokuserat sortiment för en enkel och konsekvent hudvårdsrutin.</p></div>
+    <div class="section-head"><div><p class="eyebrow">NORDEN LAB-URVAL</p><h2>Utvalda produkter</h2></div><p class="section-note">Fem noga utvalda delar för en genomtänkt hudvårdsrutin.</p></div>
     <div class="toolbar">
       <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Sök produkter eller ingredienser" aria-label="Sök produkter"></label>
       <div class="filters" role="group" aria-label="Filtrera produkter">
@@ -46,6 +57,18 @@
       <article class="product" data-category="Skin" data-search="spf 50 sunscreen sun protection solskydd"><div class="product-visual photo-visual"><span class="product-index">05 / SKYDDA</span><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=85" alt="Solskyddsprodukt"><span class="visual-caption">DAGLIGT SOLSKYDD SPF 50</span></div><div class="product-info"><div class="product-type">VARDAGENS BAS</div><h3>Solskydd SPF 50</h3><p>Solskydd med hög skyddsfaktor för daglig användning. Välj en formula du gärna applicerar generöst.</p><div class="product-foot"><span>Solskydd · Daglig användning</span><button class="info-btn" data-info="spf">Info +</button></div><button class="full-detail-btn" data-product-detail="spf">Visa produktinfo ↗</button><div class="detail" id="detail-spf" hidden>Följ produktens instruktioner för applicering och återapplicering. Komplettera med skugga och kläder.</div></div></article>
     </div>
     <p class="empty-state" id="empty-state" hidden>Inga träffar. Prova en annan sökning.</p>
+  </section>
+  <section class="routine" id="routine" aria-labelledby="routine-title">
+    <div class="routine-heading">
+      <p class="eyebrow">EN ENKEL STRUKTUR</p>
+      <h2 id="routine-title">Bygg rutinen<br><em>steg för steg.</em></h2>
+      <p>En bra rutin behöver inte vara komplicerad. Börja med grunderna och lägg till aktiva ingredienser efter behov.</p>
+    </div>
+    <div class="routine-steps">
+      <article><span>01 / RENGÖR</span><h3>Rengör varsamt</h3><p>En mild rengöring hjälper till att avlägsna smuts, solskydd och produktrester.</p></article>
+      <article><span>02 / ÅTERFUKTA</span><h3>Stöd hudbarriären</h3><p>Återfuktning hjälper huden att behålla fukt och ger rutinen en stabil grund.</p></article>
+      <article><span>03 / SKYDDA</span><h3>Avsluta med SPF</h3><p>Dagligt solskydd är en viktig del av hudvården. Följ produktens instruktioner.</p></article>
+    </div>
   </section>
   <section class="approach" id="approach"><div><p class="eyebrow">NORDEN LAB-METODEN</p><h2>Mindre, men genomtänkt.<br><em>Lär känna din rutin.</em></h2></div><p>En genomtänkt rutin börjar med mild rengöring, återfuktning och dagligt solskydd. Introducera aktiva ingredienser stegvis och välj produkter som passar din hud.</p></section>
   <section class="notice" id="notice"><span class="notice-mark">i</span><div><h2>Ett koncept under utveckling — ännu inte öppet för beställningar</h2><p>NORDEN LAB är under utveckling. Varukorg och kassa är endast en visuell demonstration. Inga beställningar eller betalningar genomförs. Priser är exempel och produkterna är inte till salu här ännu. Produktinformation är generell och ersätter inte individuell medicinsk rådgivning.</p></div></section>
