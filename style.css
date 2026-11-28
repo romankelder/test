@@ -12,3 +12,114 @@
 
 /* NORDEN LAB clinical identity */
 :root{--accent:#c5d2d9;--bg:#0b0f12;--panel:#11191e} .brand{letter-spacing:2.4px}.brand-mark{border-color:#9eb0b7;color:#e3edf0}.hero-art{background:radial-gradient(ellipse at 50% 40%,#52636a 0,#26363b 40%,#10191d 76%)}.hero-art .orb-one{background:linear-gradient(135deg,#d9ddd8,#819396 48%,#303e40)}.hero-art .orb-two{background:linear-gradient(140deg,#ecebe2,#788b8d)}.primary-link,.filter.active{background:#dce5e3;color:#101719;border-color:#dce5e3}.product{background:#11191d;border-color:#29383c}.product:hover{border-color:#829b9b}.product-visual{background:#e8e9e5}.photo-visual img{padding:0;object-fit:cover}.product-type{color:#a6bdba}.notice{border-color:#435452;background:#111a1c}@media(max-width:600px){.product-info p{min-height:82px}}
+
+
+/* NORDEN LAB — light clinical laboratory theme */
+:root{
+ color-scheme:light;
+ --bg:#f4f5f2;--panel:#ffffff;--panel2:#edf0ec;
+ --text:#202a29;--muted:#687572;--line:#d8dfda;--accent:#647c78;
+}
+body{background:var(--bg);color:var(--text)}
+.header{border-color:var(--line)}
+.brand-mark{border-color:#9aaba4;color:#405650}
+.brand-sub,.header-note,.eyebrow,.product-type{color:#71827b}
+.header nav{color:#53625d}
+.header nav a:hover,footer a:hover{color:#17231f}
+.hero h1 em,.approach h2 em{color:#72867d}
+.hero-text,.approach>p{color:#596762}
+.primary-link{background:#263c36;color:#fff}
+.primary-link:hover{background:#3d554d}
+.hero-foot{color:#78847f}
+.hero-art{background:radial-gradient(ellipse at 52% 34%,#e5e9e3 0,#cbd5ce 42%,#aebdb5 78%);border-color:#d1dad3}
+.hero-art:before{background:linear-gradient(135deg,#ffffff88,transparent 48%,#64766b22)}
+.orb-one{background:linear-gradient(135deg,#fbfcf8,#b8c5bb 48%,#778b7f);box-shadow:inset -22px -18px 35px #71807855,0 30px 60px #50665a30}
+.orb-two{background:linear-gradient(140deg,#fff,#aabbb0)}
+.plinth{background:linear-gradient(90deg,#9aa99e,#e5e9e2 48%,#89998f)}
+.art-label{color:#40534a}
+.catalogue,.approach,footer{border-color:var(--line)}
+.section-note{color:var(--muted)}
+.search-wrap{border-color:var(--line);background:#fff;color:#6b7b73}
+.search-wrap input{color:var(--text)}
+.search-wrap input::placeholder{color:#9aa59f}
+.filter{border-color:#d2dbd4;color:#53645c;background:#fff}
+.filter:hover,.filter.active{background:#30483f;color:#fff;border-color:#30483f}
+.product{background:#fff;border-color:#dce2dd}
+.product:hover{border-color:#8da198}
+.product-visual{background:#e8ece7}
+.product-index{color:#617169}
+.visual-caption{color:#52645b}
+.visual-amber{background:linear-gradient(145deg,#e9e2d7,#d1c4b1)}
+.visual-stone{background:linear-gradient(145deg,#e4e6df,#c4cbc2)}
+.visual-olive{background:linear-gradient(145deg,#dce5da,#b6c6b8)}
+.visual-blue{background:linear-gradient(145deg,#dce6e8,#b8cbd0)}
+.visual-lilac{background:linear-gradient(145deg,#e5e0e9,#c9c1d2)}
+.visual-sand{background:linear-gradient(145deg,#e9e2d5,#cfc3ad)}
+.visual-white{background:linear-gradient(145deg,#edf0ec,#cbd4ce)}
+.visual-charcoal{background:linear-gradient(145deg,#d8dfdc,#aab8b2)}
+.bottle,.tube,.dropper{filter:drop-shadow(0 15px 13px #34463b24)}
+.product-info h3{color:#26332e}
+.product-info p{color:#69756f}
+.product-foot{border-color:#e4e9e5}
+.product-foot span{color:#839089}
+.info-btn,.full-detail-btn,.save-inline{color:#526e63}
+.info-btn:hover,.full-detail-btn:hover,.save-inline:hover{color:#1f382e}
+.detail{background:#f0f3ef;color:#53635b;border:1px solid #e0e6e1}
+.approach>p{color:#65726c}
+.notice{border-color:#d7e0d9;background:#fff}
+.notice-mark{border-color:#82978c;color:#486256}
+.notice p{color:#68756e}
+.notice h2{color:#293a32}
+footer{color:#849089}
+.footer-brand{color:#26342e}
+.cart-trigger{border-color:#344d42;background:#30483f;color:#fff}
+.cart-trigger span{background:#fff;color:#30483f}
+.photo-visual{background:#f0f2ee}
+.photo-visual .product-index{color:#53665c}
+.photo-visual .visual-caption{color:#53665c}
+.demo-price{color:#273a31}
+.add-button{border-color:#8ea197;color:#40594d}
+.add-button:hover{background:#30483f;color:#fff}
+.modal-backdrop{background:#25312bbd}
+.checkout-panel{background:#fbfcfa;border-color:#d6dfd8;box-shadow:-20px 0 70px #26352b22}
+.checkout-top h2{color:#26352d}
+.close-checkout{border-color:#d1dad3;background:#fff;color:#34443b}
+.cart-line{border-color:#e0e6e1}
+.cart-line strong{color:#29382f}
+.cart-line small{color:#78857e}
+.qty-controls button{border-color:#c5d0c8;background:#fff;color:#33463b}
+.cart-total{border-color:#d7dfd9}
+.cart-total strong{color:#25382e}
+.demo-warning{border-color:#e4d7b8;background:#faf6eb;color:#806c43}
+.payment-options label{border-color:#dbe2dc;background:#fff}
+.payment-options label:has(input:checked){border-color:#718d7e;background:#f0f5f0}
+.payment-options span{color:#33443a}
+.payment-options small{color:#7a877f}
+.payment-options input{accent-color:#496b58}
+.checkout-button{background:#30483f;color:#fff}
+.checkout-button:hover{background:#426052}
+.checkout-foot{color:#7a877f}
+.checkout-confirmation{border-color:#a9c7b1;background:#edf6ef;color:#426b4c}
+.account-trigger{border-color:#c4d0c8;color:#40574b}
+.account-trigger:hover{border-color:#718b7c;background:#edf2ed}
+.account-intro{color:#68756e}
+.account-form label{color:#4d5e54}
+.account-form input{border-color:#d2dcd4;background:#fff;color:#26352d}
+.account-form input:focus{border-color:#789385}
+.profile-card{border-color:#d9e1da;background:#fff}
+.profile-avatar{border-color:#9aada1;color:#40584b}
+.profile-card strong{color:#2c3b32}
+.profile-card small{color:#78857e}
+.saved-list{color:#59685f}
+.saved-list p{border-color:#e0e6e1}
+.account-signout{border-color:#c4d0c8;color:#53665b}
+.product-modal-category{color:#71877b}
+.product-detail-panel h3{color:#2e4035}
+.product-modal-copy{color:#65736b}
+.product-modal-caution{border-color:#e4d7b8;background:#faf6eb;color:#806c43}
+.save-product-button{border-color:#30483f;background:#30483f;color:#fff}
+@media(max-width:600px){
+ .header nav{color:#53625d}
+ .account-trigger{border-color:#c4d0c8;color:#40574b}
+ .cart-trigger{background:#30483f;color:#fff}
+}
