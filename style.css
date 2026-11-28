@@ -260,3 +260,9 @@ footer{color:#75888d!important}
  .lab-heading h1{font-size:40px}
  .approach{padding:28px 18px!important}
 }
+
+
+/* Läkarporträtt under produkterna */
+.doctor-feature{margin:34px 0 8px;overflow:hidden;border:1px solid #d5e0e2;background:#e8edeb}
+.doctor-feature img{display:block;width:100%;height:clamp(260px,48vw,520px);object-fit:cover;object-position:center 38%;filter:saturate(.82);}
+@media(max-width:600px){.doctor-feature{margin-top:24px}.doctor-feature img{height:310px;object-position:center 32%}}
