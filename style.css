@@ -445,3 +445,161 @@ footer{width:min(1280px,calc(100% - 80px));padding:25px 0 30px}
   .approach{grid-template-columns:1fr;gap:18px;padding:30px 20px!important}
   footer{width:calc(100% - 36px);gap:14px;flex-wrap:wrap}
 }
+
+
+/* NORDEN LAB — product-led storefront */
+main{width:min(1280px,calc(100% - 72px))!important}
+.announcement-bar{
+  min-height:34px;background:#1e3439!important;color:#fff!important;
+  font-size:9px!important;letter-spacing:1.55px!important;font-weight:650;
+  text-transform:uppercase
+}
+.header{
+  height:82px!important;padding:0 max(36px,calc((100vw - 1280px)/2))!important;
+  background:#fff!important;border-bottom:1px solid #e6e9e7!important;
+  position:sticky;top:0;z-index:30
+}
+.header .brand{font-size:15px!important;letter-spacing:2px!important}
+.header nav{gap:34px!important;color:#26383c!important;font-size:10px!important;font-weight:700;letter-spacing:1.1px}
+.header nav a{position:relative}
+.header nav a:after{content:"";position:absolute;left:0;right:100%;bottom:-8px;height:1px;background:#365b62;transition:right .2s}
+.header nav a:hover:after{right:0}
+.header-actions{gap:8px}
+.account-trigger,.cart-trigger{min-height:38px!important;padding:0 14px!important;font-size:9px!important;font-weight:700!important;letter-spacing:1px!important}
+.account-trigger{border:1px solid #d5ddda!important}
+.cart-trigger{background:#203c42!important;border-color:#203c42!important}
+.home-hero{
+  display:grid;grid-template-columns:.86fr 1.14fr;gap:46px;align-items:center;
+  min-height:475px;padding:38px 0 42px
+}
+.home-hero-copy{padding:10px 0 10px 3px}
+.home-hero-copy .eyebrow{font-size:9px;margin:0 0 22px;letter-spacing:1.8px}
+.home-hero-copy .eyebrow span{padding:0 7px;color:#9aa8a6}
+.home-hero h1{
+  margin:0 0 21px;color:#182b30;font:750 clamp(42px,5.25vw,68px)/.99 "Manrope",sans-serif;
+  letter-spacing:-3.8px
+}
+.home-hero h1 em{font-family:Georgia,serif;font-weight:400;color:#6b8586}
+.home-hero-intro{max-width:390px;margin:0;color:#627377;font-size:14px;line-height:1.85}
+.home-hero-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:27px}
+.home-hero-button{
+  min-height:48px;display:inline-flex;align-items:center;justify-content:space-between;gap:30px;
+  padding:0 17px;background:#203e44;color:#fff;border:1px solid #203e44;
+  font-size:9px;font-weight:750;letter-spacing:1px;transition:background .2s,transform .2s
+}
+.home-hero-button span{font-size:17px}
+.home-hero-button:hover{background:#365d63;transform:translateY(-1px)}
+.home-hero-actions>span{font-size:8px;letter-spacing:1.15px;color:#809093;font-weight:700}
+.home-hero-media{height:405px;position:relative;overflow:hidden;background:#e6eeeb}
+.home-hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#172e302c,transparent 35%)}
+.home-hero-media img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.7) contrast(.96)}
+.home-hero-media-label{
+  position:absolute;z-index:1;left:20px;bottom:17px;color:#fff;
+  font-size:8px;font-weight:700;letter-spacing:1.5px
+}
+.home-hero-media-label span{display:inline-grid;place-items:center;width:22px;height:22px;margin-right:8px;border:1px solid #ffffffa6}
+.value-strip{
+  margin:0 0 68px!important;border-top:1px solid #e0e7e4!important;
+  border-bottom:1px solid #e0e7e4!important;background:#fff
+}
+.value-strip>div{min-height:68px}
+.value-strip strong{font:700 9px "Manrope";letter-spacing:1.25px;text-transform:uppercase;color:#354c50}
+.value-strip span{font-size:8px;color:#829694}
+.catalogue{padding:0 0 76px!important}
+.section-head{margin-bottom:24px!important}
+.section-head .eyebrow{font-size:9px!important;letter-spacing:1.7px!important}
+.section-head h2{font:700 clamp(29px,3vw,39px)/1.1 "Manrope"!important;letter-spacing:-1.7px!important;color:#182e33!important}
+.section-note{max-width:280px;color:#78888a!important;font-size:11px!important}
+.toolbar{margin:0 0 22px!important;align-items:center}
+.search-wrap{width:280px!important;height:42px!important;border:1px solid #dce4e0!important;background:#fff!important}
+.filters{display:flex;gap:6px;flex-wrap:wrap}
+.filter{
+  min-height:34px;padding:0 13px!important;border:1px solid #dfe6e2!important;
+  background:#fff!important;color:#496064!important;font-size:9px!important;font-weight:700;letter-spacing:.45px!important
+}
+.filter.active,.filter:hover{background:#203e44!important;color:#fff!important;border-color:#203e44!important}
+.product-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:24px 16px!important}
+.product{
+  border:1px solid #e0e7e3!important;background:#fff!important;border-radius:0!important;
+  box-shadow:0 2px 10px rgba(24,52,60,.025)!important;overflow:hidden
+}
+.product:hover{transform:translateY(-2px)!important;border-color:#b5c5bf!important;box-shadow:0 9px 22px rgba(24,52,60,.075)!important}
+.product-visual{height:275px!important;background:#f0f3f0!important}
+.photo-visual img{width:100%;height:100%;object-fit:cover!important;filter:saturate(.64) contrast(.98)!important;transition:transform .45s}
+.product:hover .photo-visual img{transform:scale(1.035)}
+.product-index{top:14px!important;left:14px!important;font-size:8px!important;letter-spacing:1.3px!important;color:#43595a!important}
+.visual-caption{bottom:13px!important;right:13px!important;font-size:7px!important;letter-spacing:1.2px!important;color:#43595a!important}
+.product-info{padding:17px 16px 16px!important}
+.product-type{font-size:8px!important;letter-spacing:1.35px!important;color:#7a9290!important}
+.product-info h3{margin:7px 0!important;font:700 16px/1.3 "Manrope"!important;letter-spacing:-.3px!important;color:#1d3438!important}
+.product-info p{min-height:66px!important;font-size:10px!important;line-height:1.7!important;color:#6c7d7e!important}
+.product-foot{margin-top:11px!important;padding-top:10px!important}
+.product-foot span{font-size:8px!important}
+.info-btn,.full-detail-btn,.save-inline{font-size:9px!important}
+.price-row{margin-top:10px!important;padding-top:11px!important}
+.demo-price{font-size:13px!important;font-weight:750!important}
+.add-button{min-height:34px;padding:0 10px!important;font-size:8px!important;font-weight:700!important;letter-spacing:.55px!important}
+.routine{
+  margin:0 0 62px!important;padding:52px 38px!important;background:#edf2ef!important;
+  border:0!important;grid-template-columns:.78fr 1.55fr!important;gap:7%!important
+}
+.routine-heading .eyebrow{font-size:9px!important}
+.routine-heading h2{font-size:clamp(32px,3.8vw,43px)!important;letter-spacing:-1.7px!important}
+.routine-steps{gap:22px!important}
+.routine-steps article{border-color:#9bb3aa!important;padding-top:15px!important}
+.routine-steps article>span{font-weight:700!important;font-size:8px!important;letter-spacing:1.2px!important}
+.routine-steps h3{font-size:15px!important;font-weight:700!important}
+.routine-steps p{font-size:10px!important;color:#687b78!important;line-height:1.75!important}
+.approach{
+  grid-template-columns:1fr 1fr!important;gap:9%!important;align-items:center!important;
+  padding:48px 42px!important;margin:0 0 42px!important;background:#fff!important;
+  border:1px solid #e1e8e4!important
+}
+.approach h2{font-size:clamp(30px,3.5vw,41px)!important;letter-spacing:-1.6px!important}
+.approach>p{font-size:12px!important;line-height:1.9!important;color:#67797a!important}
+.notice{margin-bottom:48px!important}
+footer{width:min(1280px,calc(100% - 72px))!important;border-color:#dbe4e0!important}
+@media(max-width:980px){
+  .home-hero{grid-template-columns:.9fr 1.1fr;gap:25px;min-height:410px}
+  .home-hero-media{height:350px}
+  .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .routine{grid-template-columns:1fr!important;gap:27px!important}
+}
+@media(max-width:680px){
+  main{width:calc(100% - 32px)!important}
+  .announcement-bar{font-size:7px!important;letter-spacing:1px!important;min-height:30px}
+  .header{height:auto!important;min-height:68px;padding:10px 16px!important;display:grid;grid-template-columns:1fr auto;gap:9px}
+  .header .brand{font-size:12px!important}
+  .header nav{grid-column:1 / -1;grid-row:2;display:flex;justify-content:center;gap:19px!important;border-top:1px solid #e7ece9;padding:9px 0 2px;font-size:8px!important}
+  .header-actions{grid-column:2;grid-row:1}
+  .account-trigger,.cart-trigger{min-height:32px!important;padding:0 9px!important;font-size:7px!important}
+  .home-hero{grid-template-columns:1fr;gap:24px;padding:37px 0 30px;min-height:0}
+  .home-hero h1{font-size:clamp(42px,12vw,59px);letter-spacing:-2.8px}
+  .home-hero-intro{font-size:13px}
+  .home-hero-media{height:260px}
+  .value-strip{margin-bottom:49px!important}
+  .value-strip>div{min-height:63px;gap:4px;flex-direction:column;text-align:center}
+  .value-strip strong{font-size:8px!important;letter-spacing:.8px}
+  .section-head{display:block!important}
+  .section-note{display:block!important;margin-top:10px}
+  .toolbar{display:flex;align-items:stretch;flex-direction:column}
+  .search-wrap{width:100%!important}
+  .filters{gap:5px}
+  .filter{padding:0 10px!important;font-size:8px!important}
+  .product-grid{grid-template-columns:1fr 1fr!important;gap:12px!important}
+  .product-visual{height:190px!important}
+  .product-info{padding:13px 11px!important}
+  .product-info h3{font-size:14px!important}
+  .product-info p{min-height:88px!important;font-size:9px!important}
+  .product-foot{align-items:flex-start!important;flex-direction:column!important;gap:5px!important}
+  .price-row{gap:7px}
+  .add-button{padding:0 7px!important;font-size:7px!important}
+  .routine{padding:29px 19px!important;margin-bottom:42px!important}
+  .routine-steps{grid-template-columns:1fr!important;gap:17px!important}
+  .routine-steps article{display:grid;grid-template-columns:94px 1fr;column-gap:10px;padding-top:12px!important}
+  .routine-steps article>span{grid-row:span 2;padding-top:4px}
+  .routine-steps h3{margin:0 0 4px!important}
+  .routine-steps p{grid-column:2}
+  .approach{grid-template-columns:1fr!important;gap:16px!important;padding:29px 20px!important}
+  footer{width:calc(100% - 32px)!important;gap:14px;flex-wrap:wrap}
+}
