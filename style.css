@@ -266,3 +266,5 @@ footer{color:#75888d!important}
 .doctor-feature{width:min(100% - 32px,460px);margin:36px auto 12px;padding:8px;border:1px solid #b9c9cc;background:#fff;box-shadow:0 3px 14px rgba(32,53,61,.07)}
 .doctor-feature img{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;border:1px solid #dce5e6;filter:saturate(.82)}
 @media(max-width:600px){.doctor-feature{width:calc(100% - 32px);margin-top:26px;padding:6px}}
+
+.doctor-caption{margin:10px 0 2px;text-align:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#526b72;font-weight:600}
