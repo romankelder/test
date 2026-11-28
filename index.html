@@ -9,52 +9,50 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20261128-simpletics1">
+<link rel="stylesheet" href="style.css?v=20261128-basedinspired1">
 </head>
 <body>
 <div class="announcement-bar"><span>NORDEN LAB</span><i></i><span>KLINISK HUDVÅRD · EN GENOMTÄNKT RUTIN</span></div>
 <header class="header">
   <a class="brand" href="#" aria-label="NORDEN LAB startsida"><span class="brand-mark">N</span><span>NORDEN LAB<span class="brand-sub">KLINISK HUDVÅRD</span></span></a>
-  <nav aria-label="Huvudmeny"><a href="#catalogue">Sortiment</a><a href="#routine">Hudvårdsrutinen</a><a href="#approach">Vår filosofi</a></nav>
+  <nav aria-label="Huvudmeny"><a href="#catalogue">SHOPPA</a><a href="#routine">RUTINEN</a><a href="#approach">OM NORDEN LAB</a></nav>
   <div class="header-actions"><button class="account-trigger" id="open-account" type="button">MIN NORDEN</button><button class="cart-trigger" id="open-cart" type="button">VARUKORG <span id="cart-count">0</span></button></div>
 </header>
 <main>
-  <section class="hero hero-lab" aria-label="NORDEN LAB">
-    <div class="lab-heading">
-      <p class="eyebrow">NORDEN LAB <span>/</span> DERMATOLOGISK HUDVÅRD</p>
-      <h1>Hudvård,<br><em>utan överflöd.</em></h1>
-      <p class="hero-intro">Ett noga utvalt sortiment med fokus på ingredienser, funktion och en rutin som är enkel att följa.</p>
-      <a class="hero-cta" href="#catalogue">Upptäck sortimentet <span aria-hidden="true">→</span></a>
-      <p class="hero-meta">UTVALDA FORMULERINGAR <span>·</span> GENOMTÄNKTA RUTINER</p>
+  <section class="home-hero" aria-label="NORDEN LAB hudvård">
+    <div class="home-hero-copy">
+      <p class="eyebrow">NORDEN LAB <span>/</span> KLINISK HUDVÅRD</p>
+      <h1>En enklare väg<br><em>till din rutin.</em></h1>
+      <p class="home-hero-intro">Utvalda hudvårdsprodukter med fokus på genomtänkta ingredienser, tydlig funktion och vardaglig användning.</p>
+      <div class="home-hero-actions">
+        <a class="home-hero-button" href="#catalogue">SHOPPA HUDVÅRD <span aria-hidden="true">→</span></a>
+        <span>FEM UTVALDA PRODUKTER</span>
+      </div>
     </div>
-    <div class="lab-visual" aria-hidden="true">
-      <div class="lab-grid"></div>
-      <div class="lab-visual-index">N / LAB <span>EST. 2026</span></div>
-      <div class="lab-vial"><i></i><b>N / LAB</b><small>FORMULA 001</small></div>
-      <div class="lab-cross"></div>
-      <div class="lab-visual-spec">01<br><span>FORMULA<br>STUDY</span></div>
-      <span class="lab-visual-note">HUDVÅRD · FORMULA · FUNKTION</span>
+    <div class="home-hero-media">
+      <img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=1500&q=88" alt="Hudvårdsprodukter i en ljus miljö">
+      <div class="home-hero-media-label"><span>01</span> NORDEN LAB / DAILY SKINCARE</div>
     </div>
   </section>
   <section class="value-strip" aria-label="NORDEN LAB:s fokus">
     <div><span>01</span><strong>Utvalt sortiment</strong></div>
     <div><span>02</span><strong>Ingrediensfokus</strong></div>
-    <div><span>03</span><strong>En enkel rutin</strong></div>
+    <div><span>03</span><strong>En rutin som håller</strong></div>
   </section>
   <section class="catalogue" id="catalogue">
-    <div class="section-head"><div><p class="eyebrow">NORDEN LAB-URVAL</p><h2>Utvalda produkter</h2></div><p class="section-note">Fem noga utvalda delar för en genomtänkt hudvårdsrutin.</p></div>
+    <div class="section-head"><div><p class="eyebrow">NORDEN LAB / THE EDIT</p><h2>Shoppa hudvård</h2></div><p class="section-note">Hitta rätt steg för din vardag. Utforska våra fem utvalda produkter.</p></div>
     <div class="toolbar">
       <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Sök produkter eller ingredienser" aria-label="Sök produkter"></label>
       <div class="filters" role="group" aria-label="Filtrera produkter">
-        <button class="filter active" data-filter="All">Alla</button><button class="filter" data-filter="Skin">Hudvård</button><button class="filter" data-filter="Hair">Hår</button><button class="filter" data-filter="Grooming">Övrigt</button>
+        <button class="filter active" data-filter="All">Alla</button><button class="filter" data-filter="Rengöring">Rengöring</button><button class="filter" data-filter="Serum">Serum</button><button class="filter" data-filter="Återfuktning">Återfuktning</button><button class="filter" data-filter="Aktiv hudvård">Aktiv hudvård</button><button class="filter" data-filter="Solskydd">Solskydd</button>
       </div>
     </div>
     <div class="product-grid" id="product-grid">
-      <article class="product" data-category="Skin" data-search="niacinamide serum vitamin b3 skin barrier"><div class="product-visual photo-visual"><span class="product-index">01 / SERUM</span><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85" alt="Hudvårdsserum"><span class="visual-caption">STÖD FÖR HUDEN</span></div><div class="product-info"><div class="product-type">AKTIV VARDAGSVÅRD</div><h3>Niacinamidserum</h3><p>Serum med vitamin B3 som kan bidra till att stärka hudbarriären och jämna ut hudens utseende.</p><div class="product-foot"><span>Serum · Daglig hudvård</span><button class="info-btn" data-info="niacinamide">Info +</button></div><button class="full-detail-btn" data-product-detail="niacinamide">Visa produktinfo ↗</button><div class="detail" id="detail-niacinamide" hidden>Koncentration och formula varierar. En högre halt är inte automatiskt bättre för alla hudtyper.</div></div></article>
-      <article class="product" data-category="Skin" data-search="gentle cleanser mild rengöring face wash"><div class="product-visual photo-visual"><span class="product-index">02 / RENGÖRING</span><img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=800&q=85" alt="Ansiktsrengöring"><span class="visual-caption">DAGLIG RENGÖRING</span></div><div class="product-info"><div class="product-type">RUTINENS GRUND</div><h3>Mild ansiktsrengöring</h3><p>Mild ansiktsrengöring som avlägsnar smuts och produktrester utan en stram känsla.</p><div class="product-foot"><span>Rengöring · Daglig användning</span><button class="info-btn" data-info="cleanser">Info +</button></div><button class="full-detail-btn" data-product-detail="cleanser">Visa produktinfo ↗</button><div class="detail" id="detail-cleanser" hidden>Välj en rengöring som passar din hudtyp. Oparfymerade alternativ kan passa känslig hud.</div></div></article>
-      <article class="product" data-category="Skin" data-search="moisturizer moisturiser face cream hydration återfuktning"><div class="product-visual photo-visual"><span class="product-index">03 / ÅTERFUKTNING</span><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85" alt="Återfuktande ansiktskräm"><span class="visual-caption">DAGLIG ÅTERFUKTNING</span></div><div class="product-info"><div class="product-type">RUTINENS GRUND</div><h3>Återfuktande ansiktskräm</h3><p>Återfuktande ansiktskräm som hjälper huden att behålla fukt och stödjer hudbarriären.</p><div class="product-foot"><span>Ansiktskräm · Dag och natt</span><button class="info-btn" data-info="moisturizer">Info +</button></div><button class="full-detail-btn" data-product-detail="moisturizer">Visa produktinfo ↗</button><div class="detail" id="detail-moisturizer" hidden>Textur och ingredienser varierar. Anpassa valet efter hudtyp och övriga produkter i rutinen.</div></div></article>
-      <article class="product" data-category="Skin" data-search="azelaic acid azelainsyra blemishes uneven tone"><div class="product-visual photo-visual"><span class="product-index">04 / BEHANDLA</span><img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=85" alt="Aktiv hudvård"><span class="visual-caption">RIKTAD HUDVÅRD</span></div><div class="product-info"><div class="product-type">AKTIV INGREDIENS</div><h3>Azelainsyra</h3><p>Kosmetisk hudvård med azelainsyra för orenheter och synligt ojämn hudton, beroende på formula.</p><div class="product-foot"><span>Aktiv hudvård · Kontrollera formula</span><button class="info-btn" data-info="azelaic">Info +</button></div><button class="full-detail-btn" data-product-detail="azelaic">Visa produktinfo ↗</button><div class="detail" id="detail-azelaic" hidden>Styrka och klassificering varierar. Kontrollera exakt produktstatus och märkning före försäljning.</div></div></article>
-      <article class="product" data-category="Skin" data-search="spf 50 sunscreen sun protection solskydd"><div class="product-visual photo-visual"><span class="product-index">05 / SKYDDA</span><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=85" alt="Solskyddsprodukt"><span class="visual-caption">DAGLIGT SOLSKYDD SPF 50</span></div><div class="product-info"><div class="product-type">VARDAGENS BAS</div><h3>Solskydd SPF 50</h3><p>Solskydd med hög skyddsfaktor för daglig användning. Välj en formula du gärna applicerar generöst.</p><div class="product-foot"><span>Solskydd · Daglig användning</span><button class="info-btn" data-info="spf">Info +</button></div><button class="full-detail-btn" data-product-detail="spf">Visa produktinfo ↗</button><div class="detail" id="detail-spf" hidden>Följ produktens instruktioner för applicering och återapplicering. Komplettera med skugga och kläder.</div></div></article>
+      <article class="product" data-category="Serum" data-search="niacinamide serum vitamin b3 skin barrier"><div class="product-visual photo-visual"><span class="product-index">01 / SERUM</span><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85" alt="Hudvårdsserum"><span class="visual-caption">STÖD FÖR HUDEN</span></div><div class="product-info"><div class="product-type">AKTIV VARDAGSVÅRD</div><h3>Niacinamidserum</h3><p>Serum med vitamin B3 som kan bidra till att stärka hudbarriären och jämna ut hudens utseende.</p><div class="product-foot"><span>Serum · Daglig hudvård</span><button class="info-btn" data-info="niacinamide">Info +</button></div><button class="full-detail-btn" data-product-detail="niacinamide">Visa produktinfo ↗</button><div class="detail" id="detail-niacinamide" hidden>Koncentration och formula varierar. En högre halt är inte automatiskt bättre för alla hudtyper.</div></div></article>
+      <article class="product" data-category="Rengöring" data-search="gentle cleanser mild rengöring face wash"><div class="product-visual photo-visual"><span class="product-index">02 / RENGÖRING</span><img src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=800&q=85" alt="Ansiktsrengöring"><span class="visual-caption">DAGLIG RENGÖRING</span></div><div class="product-info"><div class="product-type">RUTINENS GRUND</div><h3>Mild ansiktsrengöring</h3><p>Mild ansiktsrengöring som avlägsnar smuts och produktrester utan en stram känsla.</p><div class="product-foot"><span>Rengöring · Daglig användning</span><button class="info-btn" data-info="cleanser">Info +</button></div><button class="full-detail-btn" data-product-detail="cleanser">Visa produktinfo ↗</button><div class="detail" id="detail-cleanser" hidden>Välj en rengöring som passar din hudtyp. Oparfymerade alternativ kan passa känslig hud.</div></div></article>
+      <article class="product" data-category="Återfuktning" data-search="moisturizer moisturiser face cream hydration återfuktning"><div class="product-visual photo-visual"><span class="product-index">03 / ÅTERFUKTNING</span><img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=85" alt="Återfuktande ansiktskräm"><span class="visual-caption">DAGLIG ÅTERFUKTNING</span></div><div class="product-info"><div class="product-type">RUTINENS GRUND</div><h3>Återfuktande ansiktskräm</h3><p>Återfuktande ansiktskräm som hjälper huden att behålla fukt och stödjer hudbarriären.</p><div class="product-foot"><span>Ansiktskräm · Dag och natt</span><button class="info-btn" data-info="moisturizer">Info +</button></div><button class="full-detail-btn" data-product-detail="moisturizer">Visa produktinfo ↗</button><div class="detail" id="detail-moisturizer" hidden>Textur och ingredienser varierar. Anpassa valet efter hudtyp och övriga produkter i rutinen.</div></div></article>
+      <article class="product" data-category="Aktiv hudvård" data-search="azelaic acid azelainsyra blemishes uneven tone"><div class="product-visual photo-visual"><span class="product-index">04 / BEHANDLA</span><img src="https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=800&q=85" alt="Aktiv hudvård"><span class="visual-caption">RIKTAD HUDVÅRD</span></div><div class="product-info"><div class="product-type">AKTIV INGREDIENS</div><h3>Azelainsyra</h3><p>Kosmetisk hudvård med azelainsyra för orenheter och synligt ojämn hudton, beroende på formula.</p><div class="product-foot"><span>Aktiv hudvård · Kontrollera formula</span><button class="info-btn" data-info="azelaic">Info +</button></div><button class="full-detail-btn" data-product-detail="azelaic">Visa produktinfo ↗</button><div class="detail" id="detail-azelaic" hidden>Styrka och klassificering varierar. Kontrollera exakt produktstatus och märkning före försäljning.</div></div></article>
+      <article class="product" data-category="Solskydd" data-search="spf 50 sunscreen sun protection solskydd"><div class="product-visual photo-visual"><span class="product-index">05 / SKYDDA</span><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=85" alt="Solskyddsprodukt"><span class="visual-caption">DAGLIGT SOLSKYDD SPF 50</span></div><div class="product-info"><div class="product-type">VARDAGENS BAS</div><h3>Solskydd SPF 50</h3><p>Solskydd med hög skyddsfaktor för daglig användning. Välj en formula du gärna applicerar generöst.</p><div class="product-foot"><span>Solskydd · Daglig användning</span><button class="info-btn" data-info="spf">Info +</button></div><button class="full-detail-btn" data-product-detail="spf">Visa produktinfo ↗</button><div class="detail" id="detail-spf" hidden>Följ produktens instruktioner för applicering och återapplicering. Komplettera med skugga och kläder.</div></div></article>
     </div>
     <p class="empty-state" id="empty-state" hidden>Inga träffar. Prova en annan sökning.</p>
   </section>
