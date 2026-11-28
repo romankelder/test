@@ -263,6 +263,6 @@ footer{color:#75888d!important}
 
 
 /* Läkarporträtt under produkterna */
-.doctor-feature{margin:34px 0 8px;overflow:hidden;border:1px solid #d5e0e2;background:#e8edeb}
-.doctor-feature img{display:block;width:100%;height:clamp(260px,48vw,520px);object-fit:cover;object-position:center 38%;filter:saturate(.82);}
-@media(max-width:600px){.doctor-feature{margin-top:24px}.doctor-feature img{height:310px;object-position:center 32%}}
+.doctor-feature{width:min(100% - 32px,460px);margin:36px auto 12px;padding:8px;border:1px solid #b9c9cc;background:#fff;box-shadow:0 3px 14px rgba(32,53,61,.07)}
+.doctor-feature img{display:block;width:100%;height:auto;max-height:520px;object-fit:contain;border:1px solid #dce5e6;filter:saturate(.82)}
+@media(max-width:600px){.doctor-feature{width:calc(100% - 32px);margin-top:26px;padding:6px}}
