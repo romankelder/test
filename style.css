@@ -268,3 +268,5 @@ footer{color:#75888d!important}
 @media(max-width:600px){.doctor-feature{width:calc(100% - 32px);margin-top:26px;padding:6px}}
 
 .doctor-caption{margin:10px 0 2px;text-align:center;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#526b72;font-weight:600}
+
+.doctor-description{max-width:620px;margin:8px auto 4px;text-align:center;font-size:13px;line-height:1.75;color:#64777c}
