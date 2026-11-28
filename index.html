@@ -1,8 +1,83 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0b0e13"><title>Roman Kelder Test</title><meta name="description" content="50 questions across ten dimensions of thinking."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css?v=20261123-2"></head>
-<body><a class="skip-link" href="#main">Skip to content</a><main class="site-shell" id="main">
-<section class="hero" aria-label="Roman Kelder Test"><div class="hero-image"><img src="Dramatic%20Marble%20Bust%20in%20Shadow.png" alt="Classical marble male bust" fetchpriority="high"></div><div class="hero-content"><h1>Roman Kelder Test</h1><button id="btn-start" class="btn"><span>Start</span><b aria-hidden="true">→</b></button></div></section>
-<section id="screen-start" class="screen active" aria-label="Test introduction"></section>
-<section id="screen-quiz" class="screen" aria-live="polite"><div class="quiz-head"><span>QUESTION <b id="qnum">1</b> / <b id="qtotal">50</b></span><span>TIME <b id="timer">00:00</b></span><span>RIGHT <b id="score">0</b></span></div><div class="progress"><div id="bar"></div></div><p id="category-label" class="eyebrow"></p><h2 id="question" tabindex="-1">...</h2><div id="options" class="options"></div><div id="feedback" class="feedback" role="status" hidden></div><button id="btn-next" class="btn next-btn" hidden><span>Continue</span><b aria-hidden="true">→</b></button></section>
-<section id="screen-result" class="screen"><p class="eyebrow">YOUR RESULTS</p><h2>Roman Kelder Test complete.</h2><div class="result-box"><div class="big" id="result-score">0</div><div class="rank" id="result-rank">TOTAL RKT SCORE</div><p id="result-text"></p><p class="small">TIME <b id="result-time">00:00</b></p></div><h3>Category scores</h3><div id="category-scores" class="category-scores"></div><details><summary>Review your answers</summary><ol id="review" class="review"></ol></details><button id="btn-restart" class="btn"><span>Try again</span><b aria-hidden="true">↻</b></button></section>
-</main><script src="questions.js?v=20261123-4"></script><script src="script.js?v=20261123-3"></script></body></html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0e13">
+<title>FORM — Skin, Hair & Grooming</title>
+<meta name="description" content="A curated concept catalogue for skin, hair and everyday grooming essentials.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=20261128-1">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#" aria-label="FORM home"><span class="brand-mark">F</span><span>FORM<span class="brand-sub">PERSONAL CARE</span></span></a>
+  <nav aria-label="Main navigation"><a href="#catalogue">Catalogue</a><a href="#approach">Our approach</a></nav>
+  <a class="header-note" href="#notice">CONCEPT STORE <span>↗</span></a>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">SKIN · HAIR · GROOMING</p>
+      <h1>Small routines.<br><em>Considered results.</em></h1>
+      <p class="hero-text">A focused catalogue of well-known ingredients and everyday essentials for a more considered personal-care routine.</p>
+      <a class="primary-link" href="#catalogue">Explore the catalogue <span>↓</span></a>
+      <p class="hero-foot">A product concept — not a live shop.</p>
+    </div>
+    <div class="hero-art" aria-label="Abstract sculptural display">
+      <div class="orb orb-one"></div><div class="orb orb-two"></div>
+      <div class="plinth"></div><div class="art-label">FORM / 001<br>THE DAILY EDITION</div>
+    </div>
+  </section>
+  <section class="catalogue" id="catalogue">
+    <div class="section-head"><div><p class="eyebrow">THE EDIT</p><h2>Explore essentials</h2></div><p class="section-note">A reference catalogue of ingredients and product types.</p></div>
+    <div class="toolbar">
+      <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search ingredients or products" aria-label="Search products"></label>
+      <div class="filters" role="group" aria-label="Filter products">
+        <button class="filter active" data-filter="All">All</button><button class="filter" data-filter="Skin">Skin</button><button class="filter" data-filter="Hair">Hair</button><button class="filter" data-filter="Grooming">Grooming</button>
+      </div>
+    </div>
+    <div class="product-grid" id="product-grid">
+      <article class="product" data-category="Skin" data-search="tretinoin retinoid prescription acne skin texture">
+        <div class="product-visual visual-amber"><span class="product-index">01 / SKIN</span><div class="bottle bottle-amber"><i></i></div><span class="visual-caption">RETINOID</span></div>
+        <div class="product-info"><div class="product-type">PRESCRIPTION ACTIVE</div><h3>Tretinoin</h3><p>A topical retinoid used in the treatment of acne and other skin concerns under medical guidance.</p><div class="product-foot"><span>Medical supervision required</span><button class="info-btn" data-info="tretinoin">Details +</button></div><div class="detail" id="detail-tretinoin" hidden>Prescription medicine in many countries. Can cause irritation and increased sun sensitivity. Suitability, strength and use should be assessed by a qualified clinician. Avoid during pregnancy unless specifically advised by a clinician.</div></div>
+      </article>
+      <article class="product" data-category="Skin" data-search="azelaic acid redness blemishes skincare">
+        <div class="product-visual visual-stone"><span class="product-index">02 / SKIN</span><div class="tube tube-stone"><i></i></div><span class="visual-caption">CALM + CLARIFY</span></div>
+        <div class="product-info"><div class="product-type">SKINCARE ACTIVE</div><h3>Azelaic Acid</h3><p>An ingredient used in skincare for blemish-prone skin and the appearance of uneven tone.</p><div class="product-foot"><span>Cosmetic & medical strengths</span><button class="info-btn" data-info="azelaic">Details +</button></div><div class="detail" id="detail-azelaic" hidden>Available in different formulations and strengths. Higher-strength preparations may be regulated as medicines. Introduce carefully and seek professional advice if irritation persists.</div></div>
+      </article>
+      <article class="product" data-category="Hair" data-search="minoxidil hair growth scalp topical">
+        <div class="product-visual visual-olive"><span class="product-index">03 / HAIR</span><div class="bottle bottle-olive"><i></i></div><span class="visual-caption">SCALP CARE</span></div>
+        <div class="product-info"><div class="product-type">HAIR-LOSS TREATMENT</div><h3>Minoxidil</h3><p>A topical medicine used for certain types of hair loss. Results and suitability vary.</p><div class="product-foot"><span>Check local medicine guidance</span><button class="info-btn" data-info="minoxidil">Details +</button></div><div class="detail" id="detail-minoxidil" hidden>Not suitable for every cause of hair loss. Follow the locally approved product information and ask a pharmacist or clinician before use, especially with scalp conditions or cardiovascular concerns.</div></div>
+      </article>
+      <article class="product" data-category="Skin" data-search="niacinamide serum pores oil skin barrier">
+        <div class="product-visual visual-blue"><span class="product-index">04 / SKIN</span><div class="dropper"><i></i></div><span class="visual-caption">DAILY SERUM</span></div>
+        <div class="product-info"><div class="product-type">SKINCARE ACTIVE</div><h3>Niacinamide</h3><p>A form of vitamin B3 commonly used to support the skin barrier and improve the look of uneven tone.</p><div class="product-foot"><span>Everyday skincare</span><button class="info-btn" data-info="niacinamide">Details +</button></div><div class="detail" id="detail-niacinamide" hidden>Often found in leave-on serums and moisturisers. Concentrations vary; a higher percentage is not automatically better for every skin type.</div></div>
+      </article>
+      <article class="product" data-category="Skin" data-search="adapalene retinoid acne gel">
+        <div class="product-visual visual-lilac"><span class="product-index">05 / SKIN</span><div class="tube tube-lilac"><i></i></div><span class="visual-caption">NIGHT ROUTINE</span></div>
+        <div class="product-info"><div class="product-type">TOPICAL RETINOID</div><h3>Adapalene</h3><p>A topical retinoid used for acne in suitable patients, depending on local availability and regulation.</p><div class="product-foot"><span>Check local availability</span><button class="info-btn" data-info="adapalene">Details +</button></div><div class="detail" id="detail-adapalene" hidden>May cause dryness, redness or irritation. Follow the product leaflet and seek advice about combining it with other active ingredients.</div></div>
+      </article>
+      <article class="product" data-category="Hair" data-search="ketoconazole shampoo dandruff scalp">
+        <div class="product-visual visual-sand"><span class="product-index">06 / HAIR</span><div class="bottle bottle-sand"><i></i></div><span class="visual-caption">SCALP RESET</span></div>
+        <div class="product-info"><div class="product-type">SCALP CARE</div><h3>Ketoconazole Shampoo</h3><p>An antifungal shampoo used for dandruff and certain scalp conditions.</p><div class="product-foot"><span>Medicine in some markets</span><button class="info-btn" data-info="keto">Details +</button></div><div class="detail" id="detail-keto" hidden>Availability and instructions differ by country and concentration. Use according to the package leaflet or a healthcare professional's advice.</div></div>
+      </article>
+      <article class="product" data-category="Grooming" data-search="spf sunscreen sun protection broad spectrum">
+        <div class="product-visual visual-white"><span class="product-index">07 / GROOMING</span><div class="tube tube-white"><i></i></div><span class="visual-caption">DAILY DEFENCE</span></div>
+        <div class="product-info"><div class="product-type">DAILY ESSENTIAL</div><h3>Broad-Spectrum SPF 50</h3><p>Sun protection for everyday use. Choose a formula you will apply generously and reapply as directed.</p><div class="product-foot"><span>Daily sun protection</span><button class="info-btn" data-info="spf">Details +</button></div><div class="detail" id="detail-spf" hidden>Look for broad-spectrum protection and follow the label for application and reapplication. Sunscreen complements shade and protective clothing.</div></div>
+      </article>
+      <article class="product" data-category="Grooming" data-search="gentle cleanser face wash fragrance free">
+        <div class="product-visual visual-charcoal"><span class="product-index">08 / GROOMING</span><div class="bottle bottle-charcoal"><i></i></div><span class="visual-caption">THE DAILY BASE</span></div>
+        <div class="product-info"><div class="product-type">DAILY ESSENTIAL</div><h3>Gentle Cleanser</h3><p>A simple, non-abrasive cleanser to remove daily build-up without an overly stripped feel.</p><div class="product-foot"><span>Routine foundation</span><button class="info-btn" data-info="cleanser">Details +</button></div><div class="detail" id="detail-cleanser" hidden>Choose a formula suited to your skin type. Fragrance-free options may be preferable for people prone to irritation.</div></div>
+      </article>
+    </div>
+    <p class="empty-state" id="empty-state" hidden>No matches. Try another search.</p>
+  </section>
+  <section class="approach" id="approach"><div><p class="eyebrow">A BETTER ROUTINE</p><h2>Keep it simple.<br><em>Know what you use.</em></h2></div><p>Start with the basics, introduce one new active at a time, and give your routine room to work. More products do not automatically mean better results.</p></section>
+  <section class="notice" id="notice"><span class="notice-mark">i</span><div><h2>Concept catalogue only</h2><p>This website is a design concept, not a functioning shop. No products are offered for sale, no orders or payments can be placed, and no medical products are supplied. Product names are shown for general educational context only. This is not medical advice; consult a qualified healthcare professional before using prescription treatments or if you have a medical concern.</p></div></section>
+</main>
+<footer><a class="brand footer-brand" href="#"><span class="brand-mark">F</span><span>FORM<span class="brand-sub">PERSONAL CARE</span></span></a><span>CONSIDERED PERSONAL CARE · 2026</span><a href="#catalogue">Back to top ↑</a></footer>
+<script src="script.js?v=20261128-1"></script>
+</body></html>
