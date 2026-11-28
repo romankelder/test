@@ -123,3 +123,47 @@ footer{color:#849089}
  .account-trigger{border-color:#c4d0c8;color:#40574b}
  .cart-trigger{background:#30483f;color:#fff}
 }
+
+
+/* Ljust svenskt labbtema – genomgående färgsättning */
+:root{color-scheme:light;--bg:#f4f5f2;--panel:#fff;--panel2:#edf1ed;--text:#202b27;--muted:#69766f;--line:#d9e0da;--accent:#647c70}
+html,body{background:#f4f5f2!important;color:#202b27!important}
+.header,.catalogue,.approach,footer{border-color:#d9e0da!important}
+.header nav{color:#53635a!important}.brand-mark{border-color:#9aaba0!important;color:#40594b!important}
+.brand-sub,.eyebrow,.header-note,.product-type{color:#708478!important}
+.hero h1 em,.approach h2 em{color:#71877a!important}.hero-text,.approach>p{color:#5d6b63!important}
+.hero-art{background:radial-gradient(ellipse at 52% 34%,#f1f3ef 0,#dce5dd 43%,#bac9bd 80%)!important;border-color:#d4ded6!important}
+.hero-art:before{background:linear-gradient(135deg,#ffffff99,transparent 48%,#71877822)!important}
+.orb-one{background:linear-gradient(135deg,#fff,#c4d1c7 48%,#819589)!important;box-shadow:inset -22px -18px 35px #71807844,0 30px 60px #50665a22!important}
+.orb-two{background:linear-gradient(140deg,#fff,#b7c8bc)!important}.plinth{background:linear-gradient(90deg,#a4b2a7,#eef1eb 48%,#91a197)!important}.art-label{color:#40564a!important}
+.primary-link,.checkout-button,.save-product-button{background:#30483d!important;color:#fff!important}
+.primary-link:hover,.checkout-button:hover{background:#456052!important}
+.section-note,.product-info p,.notice p,.account-intro,.product-modal-copy{color:#68756d!important}
+.search-wrap{background:#fff!important;border-color:#d5ded7!important;color:#66776d!important}
+.search-wrap input{color:#26352d!important}.search-wrap input::placeholder{color:#9aa59e!important}
+.filter{background:#fff!important;border-color:#d5ded7!important;color:#53645a!important}
+.filter:hover,.filter.active{background:#30483d!important;border-color:#30483d!important;color:#fff!important}
+.product{background:#fff!important;border-color:#dce3dd!important}.product:hover{border-color:#8ba194!important}
+.product-visual,.photo-visual{background:#e9eee9!important}
+.product-index,.visual-caption,.photo-visual .product-index,.photo-visual .visual-caption{color:#52665a!important}
+.product-info h3{color:#26352d!important}.product-foot{border-color:#e4eae5!important}.product-foot span{color:#7b8980!important}
+.info-btn,.full-detail-btn,.save-inline{color:#526e5d!important}
+.detail{background:#f1f4f0!important;color:#52635a!important;border:1px solid #e0e7e1!important}
+.notice{background:#fff!important;border-color:#d8e1da!important}.notice h2{color:#2c3b32!important}.notice p{color:#69766e!important}
+footer{color:#7c8981!important}.footer-brand{color:#29382f!important}
+.cart-trigger{background:#30483d!important;color:#fff!important;border-color:#30483d!important}
+.account-trigger{background:#fff!important;color:#40574b!important;border-color:#c8d4cb!important}
+.account-trigger:hover{background:#edf3ed!important}
+.modal-backdrop{background:#25352bbd!important}.checkout-panel{background:#fbfcfa!important;border-color:#d8e1da!important;box-shadow:-20px 0 70px #26352b22!important}
+.checkout-top h2,.cart-line strong{color:#29382f!important}.close-checkout{background:#fff!important;border-color:#d3ddd5!important;color:#34443a!important}
+.cart-line,.cart-total{border-color:#e0e7e1!important}.cart-line small,.checkout-foot{color:#78867d!important}
+.qty-controls button{background:#fff!important;border-color:#c8d3cb!important;color:#34483a!important}
+.demo-warning,.product-modal-caution{background:#faf6eb!important;border-color:#e4d7b8!important;color:#806c43!important}
+.payment-options label{background:#fff!important;border-color:#dbe3dc!important}
+.payment-options label:has(input:checked){background:#eff5ef!important;border-color:#819989!important}
+.payment-options span{color:#34463a!important}.payment-options small{color:#7c8980!important}
+.checkout-confirmation{background:#edf6ef!important;border-color:#a9c7b1!important;color:#426b4c!important}
+.account-form label{color:#4d5e54!important}.account-form input{background:#fff!important;border-color:#d2dcd4!important;color:#26352d!important}
+.profile-card{background:#fff!important;border-color:#d9e1da!important}.profile-avatar{border-color:#9aada1!important;color:#40584b!important}
+.profile-card strong{color:#2c3b32!important}.profile-card small{color:#78857e!important}.saved-list{color:#59685f!important}.saved-list p{border-color:#e0e6e1!important}
+.account-signout{border-color:#c4d0c8!important;color:#53665b!important}.product-modal-category{color:#71877b!important}
